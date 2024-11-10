@@ -3,22 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plugowtech Login</title>
+    <script src="./login.js"></script>
 </head>
 
 <body>
     <!-- FORMULÁRIO -->
     <div id="formulario">
         <h1 id="titulo-formulario">Entre com usuário e senha</h1>
+        <p id="msnErro"></p>
         <form action="" method="POST">
             <fieldset id="dados-pessoais">
-                <label>Usuário <input type="email" placeholder="Email" name="email"></label>
-                <label>Senha <input type="password" placeholder="Senha" name="password"></label>
+                <label>Usuário <input id="inputEmail" type="email" placeholder="Email" name="email"></label>
+                <label>Senha <input id="inputSenha" type="password" placeholder="Senha" name="password"></label>
             </fieldset>
-            <button type="submit">Entrar</button>
-        </form>
-        
+            <button id="btnEntrar">Entrar</button>
+            <button id="btnSignUp">SignUp</button>
+        </form>     
     </div>
 </body>
 </html>
