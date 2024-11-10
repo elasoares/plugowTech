@@ -1,4 +1,9 @@
-### **Cliente:** PlugowTech
-**Sobre o cliente:** Empresa que reúne arquitetos e lojas de acabamentos de alto padrão, promovendo uma parceria de pontuação para engajamento nas vendas.
+# Projeto de Plataforma de Fidelização e Gamificação
 
-**Objetivo do projeto:** Desenvolvimento de site para gameficação e controle de pontuação de parcerias
+**Cliente:** PlugowTech
+
+**Objetivos do projeto:** 
+- Desenvolver uma plataforma de gamificação direcionada à fidelização de profissionais nas áreas de arquitetura, engenharia, design e construção, utilizando métodos de incentivo para fortalecer o engajamento e a participação desses profissionais.
+- Promover parcerias estratégicas e incentivar a recorrência de compras nas lojas parceiras, criando um ecossistema de fidelidade onde profissionais podem acumular pontos e resgatar recompensas.
+- Estabelecer a plataforma como um elo entre profissionais e fornecedores, facilitando a fidelização e retenção dos profissionais e ampliando as oportunidades de parceria e crescimento no setor.
+
