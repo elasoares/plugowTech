@@ -12,3 +12,50 @@
 - Canva: https://www.canva.com/design/DAGVbRCEQOY/fjmZj6aYsPCUbyF1yaHkGg/edit?utm_content=DAGVbRCEQOY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton                                                                            
 - Notion: https://www.notion.so/95651e770d4d44e7847dccf00f21159f?v=1365c7e1798380839f13000c02b0f8ea&pvs=4     
 - GitHub: https://github.com/elasoares/plugowTech
+
+##
+### Backend (Django): Organizando os aplicativos por funcionalidade
+
+Com base nos requisitos do cliente, os aplicativos (apps) criados no projeto Django foram os seguintes:
+
+**a) Core:**
+
+Responsável pelas funcionalidades centrais e compartilhadas, como:
+- Página inicial pública (home.html).
+- Gerenciamento de templates gerais e estáticos.
+- Configurações globais, como termos de uso, privacidade, ou suporte.
+
+**b) Usuarios:**
+
+Gerencia os usuários do sistema, suas informações e perfis. Inclui:
+- Cadastro e autenticação (Profissionais, Consultores, Clientes).
+- Gestão de dados específicos, como CPF, profissão, registro profissional, e data de aniversário.
+- Dashboard personalizado.
+
+**c) Lojas:**
+
+Focado no cadastro e gerenciamento das lojas parceiras. Inclui:
+- Cadastro de lojas.
+- Visualização e manutenção das informações das lojas (endereço, contato, etc.).
+- Listagem para consulta.
+
+**d) Pontos:**
+
+Gerencia o acúmulo, histórico e validade de pontos. Inclui:
+- Registro de transações de pontos.
+- Validade dos pontos (18 meses padrão, configurável).
+- Relatórios e visualização do saldo.
+
+**e) Recompensas:**
+
+Focado no catálogo e resgate de recompensas. Inclui:
+- Cadastro e gestão de experiências (viagens, workshops, cashbacks, etc.).
+- Resgate de pontos por recompensas.
+- Histórico de resgates realizados.
+
+**f) Notificacoes:**
+
+Gerencia as notificações e campanhas de comunicação do sistema. Inclui:
+- Envio de notificações por e-mail, SMS ou WhatsApp.
+- Configuração de campanhas promocionais (ex.: Acelera Partnership).
+- Histórico e relatórios de notificações enviadas.
