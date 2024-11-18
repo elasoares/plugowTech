@@ -59,3 +59,6 @@ Gerencia as notificações e campanhas de comunicação do sistema. Inclui:
 - Envio de notificações por e-mail, SMS ou WhatsApp.
 - Configuração de campanhas promocionais (ex.: Acelera Partnership).
 - Histórico e relatórios de notificações enviadas.
+
+![image](https://github.com/user-attachments/assets/dee05ca3-a57b-4a23-8b04-65540e6afbc4)
+
