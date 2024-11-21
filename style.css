@@ -1,0 +1,46 @@
+*{
+    background-color: #222222;
+    width: 200px;
+}
+#logo{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 57px;
+}
+#textos{
+margin-right: 78.01px;
+    margin-left: 99.18px;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    column-gap: 9rem;
+}
+#Partner{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#ConheçaaplugouwTech{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#Ajuda{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#Links{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+
+
+#redes{
+    margin-left: 99.18px;  
+    margin-top: 49px;
+}
