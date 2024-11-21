@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    font-family: 'Poppins';
+}
+
+#container {
+    max-width: 1444px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.header{
+    color: black;
+    text-align: left;
+    font-family: Poppins;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;    
+}
+#line {
+    margin-top:1%;
+    height: 5px;
+    width: 50%;
+    background-color: #298cc5;
+}
+.search-bar {
+    margin-top: 5%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    padding-left: 185px;
+}
+.search-bar button {
+    padding: 1% 2%;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-bar input {
+    padding: 1%;
+    width: 74%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-image: url('icones/search.png');
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    text-indent: 35px;
+}
+
+#div-cards{
+    margin-top: 25px;
+    display: grid;
+    grid-auto-flow: column;    
+}
+
+#cards-container {
+    margin:20px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.card{
+    margin-left: 25px;
+    display:flex;
+}
+
+#seta-esquerda{
+    display: block ;
+}
+
+.seta{
+    margin: 80% 35%;
+    cursor: pointer;
+}
+
+.seta:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
