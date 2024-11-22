@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  font-family: "Poppins", sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 69px 40px 152px 40px;
+  background-color: #F6F6F6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-end; /* Alinha conteúdo ao final verticalmente */
+  justify-content: space-between; /* Distribui logo e espaço entre elementos */
+  margin-top: 69px;
+  position: relative; /* Necessário para centralizar o título com posição absoluta */
+  height: 100px; /* Altura definida para o cabeçalho */
+}
+
+.header .logo img {
+  width: 130px;
+  height: auto;
+}
+
+.header h1 {
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta para que o título fique exatamente no meio */
+  bottom: 0; /* Fixa na parte inferior do header */
+  font-family: "Lato", sans-serif;
+  color: #000;
+  margin: 0;  
+}
+
+/* Steps */
+.steps {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.step-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.step-row .text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.step-row .image {
+  flex: 1;
+  text-align: center;
+}
+
+.step-row img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Círculo com número e título alinhado */
+.step-header {
+  display: flex;
+  align-items: center; /* Alinha círculo e título na mesma altura */
+  gap: 1rem;
+  margin-bottom: 40px;
+}
+
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #230B34;
+  color: #F8F8FA;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.step-header h2 {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  color: #2387C0;
+  margin: 0; /* Remove margem para alinhar corretamente */
+}
+
+.step-row p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .step-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-row.reverse {
+    flex-direction: column;
+  }
+
+  .step-header {
+    justify-content: center; /* Centraliza título e círculo em telas menores */
+  }
+
+  .header {
+    height: auto;
+    flex-direction: column; /* Coloca logo e título em coluna */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header h1 {
+    position: static;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+}
