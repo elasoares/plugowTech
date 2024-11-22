@@ -46,6 +46,11 @@
     margin-bottom: 20px;
 }
 
+.card:hover{
+    box-shadow: 10px 10px 30px gray;
+    transform: translateY(-10px) !important;
+}
+
 .card .img{
     width: 100%;
 }
@@ -78,6 +83,7 @@
     font-size: 16px;
     color: #505050;
 }
+
 
 
 @media (max-width: 1334px){
