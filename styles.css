@@ -8,8 +8,7 @@
 /*ilustração imagem*/
 #imagem {
   position: relative; 
-  margin: 5px 25px 75px 150px;
-  display: grid;
+  margin: 10px 35px 55px 100px;
   grid-auto-flow: column;
 }
 #imagem{
@@ -63,9 +62,14 @@ width: 50%;
 display: inline-block;
 }
     
-  
-
-
-
-
+.container {
+  position: absolute;
+  width: 1200px;
+  height: 357.92px;
+  margin: 800px auto; 
+  top: 0px; 
+  left: 0;
+  right: 0;
+  background-color: transparent; 
+}
 
