@@ -1,0 +1,71 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "inter";
+  box-sizing: border-box;
+}
+/*ilustração imagem*/
+#imagem {
+  position: relative; 
+  margin: 5px 25px 75px 150px;
+  display: grid;
+  grid-auto-flow: column;
+}
+#imagem{
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+  background-size: 50px;
+}
+
+
+/*imagem partnership*/
+#titulo-imagem {
+  color: #242527;
+  text-align: left;
+  margin-top: 75px;
+  margin-left: 0px;
+
+  
+      
+}
+/*texto partnership*/
+#texto-imagem {
+  color: #505050;
+  margin-top: 25px;
+
+
+}
+/*quero fazer parte*/
+.cta-button {
+  
+  padding: 0.8rem 1.5rem;
+  margin-top: 25px;
+  font-size: 1rem;
+  background-color: #0a72ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 3;
+}
+.cta-button:hover {
+  background-color: #084d79;
+}
+
+/*quem pode participar*/
+#imagemparticipar {
+    margin-top: 100px;
+    position: relative;
+width: 50%;
+display: inline-block;
+}
+    
+  
+
+
+
+
+
