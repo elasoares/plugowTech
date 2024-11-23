@@ -2,7 +2,18 @@
 body{
     margin: 0px;
     padding: 0px;
+  
+    }
+    @media (max-width: 768px) {
+        
+        
+    }
+main{
+    margin: auto;
+   min: width 300px; 
+   max-width: 1438px;
 }
+
 #titulo-contatos{
     margin-top: -50px;
     margin-left: 230px;
@@ -20,6 +31,8 @@ body{
     background-image: url(imagem/capContatos.png);
     padding-top: 300px;
     padding-bottom: 50px;
+
+    
 }
 #link{
     padding-left: 50px;
@@ -89,6 +102,8 @@ margin-right: 78.01px;
     columns: auto;
     column-gap: 9rem;
     line-height: 30px;
+    cursor: pointer;
+    
     
 }
 #Partner{
@@ -126,4 +141,7 @@ padding-left: 50px;
 }
 #link-black{
 padding-left: 50px;
+}
+a{
+    color: white;
 }
