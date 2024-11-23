@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #F6F6F6;
 }
 
 /* ----- Container ----- */
@@ -11,7 +12,6 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 69px 40px 152px 40px;
-  background-color: #F6F6F6;
 }
 
 /* ----- Header----- */
