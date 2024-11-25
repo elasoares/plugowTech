@@ -1,44 +1,69 @@
-
 * {
   margin: 0;
   padding: 0;
-  font-family: "inter";
+  font-family: "Inter";
   box-sizing: border-box;
 }
-/*ilustração imagem*/
+
+/* Estrutura geral */
+body {
+  padding: 0;
+  background-color: white;
+}
+
 #imagem {
   position: relative; 
-  margin: 10px 35px 55px 100px;
+  margin: 10px 35px 55px 1px;
   grid-auto-flow: column;
 }
-#imagem{
-  display: grid;
-  grid-auto-flow: column;
-  columns: auto;
-  background-size: 50px;
-}
-
-
-/*imagem partnership*/
 #titulo-imagem {
   color: #242527;
   text-align: left;
   margin-top: 75px;
   margin-left: 0px;
-
-  
-      
 }
-/*texto partnership*/
-#texto-imagem {
-  color: #505050;
-  margin-top: 25px;
 
-
+/* Container principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/*quero fazer parte*/
+
+/* SVG */
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 1444px;
+  margin: 0 auto;
+}
+
+#imagem {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 10px 35px 55px 100px;
+  background-size: 50px;
+}
+
+
+
+#titulo {
+  font-size: 24px;
+  color: #333;
+}
+
+#texto {
+color: #555;
+margin-top: 10px;
+margin: 10px 25px 75px 25px;
+}
+
 .cta-button {
-  
   padding: 0.8rem 1.5rem;
   margin-top: 25px;
   font-size: 1rem;
@@ -50,26 +75,64 @@
   transition: background-color 0.3s;
   z-index: 3;
 }
-.cta-button:hover {
-  background-color: #084d79;
+
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-align: center;
 }
 
-/*quem pode participar*/
-#imagemparticipar {
-    margin-top: 100px;
-    position: relative;
-width: 50%;
-display: inline-block;
+.main-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-    
-.container {
-  position: absolute;
-  width: 1200px;
-  height: 357.92px;
-  margin: 800px auto; 
-  top: 0px; 
-  left: 0;
-  right: 0;
-  background-color: transparent; 
+
+/* Info Section */
+.info-section {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
 }
+
+.info-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+}
+  .main-content {
+    flex-direction: column;
+  }
+@media screen and (max-width:  768px) {
+  .container{
+    display: block;
+    background-image: none;
+
+  }
+  .container{
+    width: 50vw;
+  }
+  .container_caixa{
+    margin: 2em 2m;
+  }
+}
+  
 
