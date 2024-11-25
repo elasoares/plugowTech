@@ -9,6 +9,13 @@
     padding: 20px;
 }
 
+#wrapper {
+    float:left;
+    margin:0px;
+    height: auto;
+    width: 100%;
+}
+
 .header{
     color: black;
     text-align: left;
@@ -79,8 +86,9 @@
 }
 
 .seta{
-    margin: 80% 10%;
-    cursor: pointer;    
+    float:left;
+    margin: 80% 0% 0% -5%;
+    cursor: pointer;
 }
 
 .seta#seta-direita {
@@ -92,10 +100,10 @@
     transition: 0.5s;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 768px) {
 
     body {
-        max-width: 320px;
+        max-width: 768px;
     }
 
     
@@ -103,6 +111,11 @@
         float:left;
         width: 100%;
         height: auto;
+    }
+    div#wrapper {
+        float:left;
+        margin-left:5%;
+        width: 85%;
     }
 
     .header, .search-bar, #carrossel {
@@ -137,10 +150,10 @@
     }
 
     #div-cards {
-        width: 320px;
+        width: 100%;
         float:left;
         margin:0px;
-        margin-left: -5%;
+        padding:1%;
     }
 
     #cards-container {
@@ -150,6 +163,8 @@
     }
 
     .card {
+        float: left;
+        margin-top:20%;
         width:100%;
         z-index: -1;
     }
@@ -163,14 +178,60 @@
         float:left;
     }
     .seta#seta-direita{
-        margin-left: 60%;
-        margin-top:90%;
+        float: right;
+        margin-left:20%;
+        margin-top:85%;
     }
     
 
-  }
+}
 
-@media only screen and (max-width: 740px) {
+@media only screen and (min-width:769px) and (max-width: 820px) {
+    body {
+        max-width: 820px;
+    }
+    #carrossel {
+        float: left;
+        width: 100%;
+        margin-left: 0%;
+    }
 
-    
-  }
+    #cards-container{
+        float: left;
+        width: 100%;
+        margin-left: 5%;
+    }
+
+    .seta {
+        float:left;
+        z-index: 1000;
+        margin: 120% 30%;
+    }
+    .seta#seta-direita {
+        float:right;
+        margin: 120% -20%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #cards-container{
+        float:left;
+        margin-left:6%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        max-width: 320px;
+    }
+    .seta {
+        float:left;
+        margin-top:80%;
+        margin-left:-2%;
+    }
+    .seta#seta-direita {
+        float:right;
+        margin-top: 80%;
+        margin-left: 4%;
+    }
+}
