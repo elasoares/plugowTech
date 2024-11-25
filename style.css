@@ -1,39 +1,25 @@
-
-body{
-    margin: 0px;
-    padding: 0px;
-  
-    }
-    @media (max-width: 768px) {
-        
-        
-    }
-main{
-margin: auto;
-   min-width: width 300px; 
-   max-width: 1438px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
-#titulo-contatos{
-    margin-top: -50px;
-    margin-left: 230px;
+
+
+#titulo-contatos {
     font-size: 24px;
     color: #0775B4;
-    font-family:"Poppins", sans-serif;
+    /* margin-left: 10%; */
+    margin: 0 auto;
+    text-align: center;
 }
-#texto-contatos{
-    padding: 0px;
-    margin-left: 230px;
-    font-size: 12px;
-    font-family:"Poppins", sans-serif;
-}
-#formulario{
-    background-image: url(imagem/capContatos.png);
-    padding-top: 300px;
-    padding-bottom: 50px;
 
-    
+#texto-contatos {
+    font-size: 14px;
+/*     margin-left: 10%; */
+text-align: center;
 }
+
 #link{
     padding-left: 50px;
     
@@ -80,68 +66,138 @@ button:hover{
     background-color: #399FD8;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0px 15px 20px #399FD8;
+    box-shadow: 0px 1px 2px #399FD8;
     transition-duration: 0.5s
 }
-#fundo-roda-pe{
+#formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-imagem-doLado-contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#fundo-roda-pe {
     background-color: #222222;
-    
     padding-bottom: 50px;
-   
+    width: 100vw;
 }
-#logo{
+
+#logo {
     margin-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 57px;
+    margin-top: 30px;
 }
-#textos{
-margin-right: 78.01px;
-    margin-left: 99.18px;
-    display: grid;
-    grid-auto-flow: column;
-    columns: auto;
-    column-gap: 9rem;
-    line-height: 30px;
-    cursor: pointer;
-    
-    
+
+#textos {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5;
 }
+
+
 #Partner{
     color: white;
-    font-family: "DM Sans", sans-serif;
     font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
 }
 #ConheçaaplugouwTech{
-    
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 17px;
-}
-#Ajuda{
-    
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 17px;
-}
-#Links{
-    
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
 }
 
-
-#redes{
-    margin-left: 99.18px;  
-    margin-top: 49px;
-}
-
-#insta-black{
-padding-left: 50px;
-}
-#link-black{
-padding-left: 50px;
-}
-a{
+#Ajuda,
+#Links {
     color: white;
+    font-size: 17px;
+    text-align: left;
+}
+
+#redes {
+    text-align: center;
+    margin-top: 50px ;
+}
+
+#insta-black,
+#link-black {
+    padding-left: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (min-width: 768px) {
+    #titulo-contatos {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    #texto-contatos {
+        font-size: 14px;
+        margin-left: 5%;
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #button {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #textos {
+        margin: 0 5%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #redes {
+        margin-left: 5%;
+        text-align: left;
+    }
+    #formulario {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .conatiner-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    #ConheçaaplugouwTech{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 80px;
+    }
+   
 }
