@@ -1,0 +1,147 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+  
+    }
+    @media (max-width: 768px) {
+        
+        
+    }
+main{
+margin: auto;
+   min-width: width 300px; 
+   max-width: 1438px;
+}
+
+#titulo-contatos{
+    margin-top: -50px;
+    margin-left: 230px;
+    font-size: 24px;
+    color: #0775B4;
+    font-family:"Poppins", sans-serif;
+}
+#texto-contatos{
+    padding: 0px;
+    margin-left: 230px;
+    font-size: 12px;
+    font-family:"Poppins", sans-serif;
+}
+#formulario{
+    background-image: url(imagem/capContatos.png);
+    padding-top: 300px;
+    padding-bottom: 50px;
+
+    
+}
+#link{
+    padding-left: 50px;
+    
+}
+#insta{
+    padding-left: 50px;
+}
+#face{
+    margin-left: 70px;
+}
+
+input{
+    width: 430px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family:"Poppins", sans-serif;
+    font-size: 14px;
+   background-color: #F5F5FF;
+}
+#box-text{
+    width: 430px;
+    height: 150px;
+    
+}
+#button{
+    width: 430px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 19px;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family:"Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #0775B4;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #399FD8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0px 15px 20px #399FD8;
+    transition-duration: 0.5s
+}
+#fundo-roda-pe{
+    background-color: #222222;
+    
+    padding-bottom: 50px;
+   
+}
+#logo{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 57px;
+}
+#textos{
+margin-right: 78.01px;
+    margin-left: 99.18px;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
+    column-gap: 9rem;
+    line-height: 30px;
+    cursor: pointer;
+    
+    
+}
+#Partner{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#ConheçaaplugouwTech{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#Ajuda{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+#Links{
+    
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+}
+
+
+#redes{
+    margin-left: 99.18px;  
+    margin-top: 49px;
+}
+
+#insta-black{
+padding-left: 50px;
+}
+#link-black{
+padding-left: 50px;
+}
+a{
+    color: white;
+}
