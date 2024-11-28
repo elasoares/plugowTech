@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "plugowTech",
+			"path": "."
+		},
+		{
+			"name": "imagens",
+			"path": "../../../../../../Downloads/plugowTech/imagens"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "plugowTech"
+	}
+}
