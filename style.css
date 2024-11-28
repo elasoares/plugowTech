@@ -1,138 +1,203 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter";
-  box-sizing: border-box;
-}
-
-/* Estrutura geral */
 body {
-  padding: 0;
-  background-color: white;
-}
-
-#imagem {
-  position: relative; 
-  margin: 10px 35px 55px 1px;
-  grid-auto-flow: column;
-}
-#titulo-imagem {
-  color: #242527;
-  text-align: left;
-  margin-top: 75px;
-  margin-left: 0px;
-}
-
-/* Container principal */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 0px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* SVG */
-svg {
-  width: 100%;
-  height: auto;
-  max-width: 1444px;
-  margin: 0 auto;
-}
-
-#imagem {
-  position: relative;
-  display: grid;
-  grid-auto-flow: column;
-  margin: 10px 35px 55px 100px;
-  background-size: 50px;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 
 
-#titulo {
-  font-size: 24px;
-  color: #333;
+#titulo-contatos {
+    font-size: 24px;
+    color: #0775B4;
+    /* margin-left: 10%; */
+    margin: 0 auto;
+    text-align: center;
 }
 
-#texto {
-color: #555;
-margin-top: 10px;
-margin: 10px 25px 75px 25px;
+#texto-contatos {
+    font-size: 14px;
+/*     margin-left: 10%; */
+text-align: center;
 }
 
-.cta-button {
-  padding: 0.8rem 1.5rem;
-  margin-top: 25px;
-  font-size: 1rem;
-  background-color: #0a72ad;
-  color: #fff;
-  border: none;
-  border-radius: 4px; 
-  cursor: pointer;
-  transition: background-color 0.3s;
-  z-index: 3;
+#link{
+    padding-left: 50px;
+    
+}
+#insta{
+    padding-left: 50px;
+}
+#face{
+    margin-left: 70px;
 }
 
-
-/* Main Content */
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  text-align: center;
+input{
+    width: 430px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family:"Poppins", sans-serif;
+    font-size: 14px;
+   background-color: #F5F5FF;
 }
-
-.main-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+#box-text{
+    width: 430px;
+    height: 150px;
+    
 }
-
-/* Info Section */
-.info-section {
-  flex: 1;
-  min-width: 300px;
-  margin: 20px;
+#button{
+    width: 430px;
+    height: 50px;
+    margin-left: 230px;
+    margin-top: 19px;
+    border: 0px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family:"Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #0775B4;
+    cursor: pointer;
 }
-
-.info-section h2 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
+button:hover{
+    background-color: #399FD8;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 2px #399FD8;
+    transition-duration: 0.5s
 }
-
-.info-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-section ul li {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-}
-  .main-content {
+#formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
-  }
-@media screen and (max-width:  768px) {
-  .container{
-    display: block;
-    background-image: none;
-
-  }
-  .container{
-    width: 50vw;
-  }
-  .container_caixa{
-    margin: 2em 2m;
-  }
 }
-  
 
+.container-imagem-doLado-contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+}
+
+#fundo-roda-pe {
+    background-color: #222222;
+    padding-bottom: 50px;
+    width: 100vw;
+}
+
+#logo {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+#textos {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.5;
+}
+
+
+#Partner{
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+}
+#ConheçaaplugouwTech{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#Ajuda,
+#Links {
+    color: white;
+    font-size: 17px;
+    text-align: left;
+}
+
+#redes {
+    text-align: center;
+    margin-top: 50px ;
+}
+
+#insta-black,
+#link-black {
+    padding-left: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (min-width: 768px) {
+    #titulo-contatos {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    #texto-contatos {
+        font-size: 14px;
+        margin-left: 5%;
+    }
+
+    input {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #button {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    #textos {
+        margin: 0 5%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #redes {
+        margin-left: 5%;
+        text-align: left;
+    }
+    #formulario {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .conatiner-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+    #ConheçaaplugouwTech{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        gap: 80px;
+    }
+   
+}
