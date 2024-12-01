@@ -189,6 +189,8 @@ main{
     padding-bottom: 50px;
     width: 100%;
     flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
 }
 
 .container-footer{
