@@ -1,144 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
-
-
-#titulo-contatos {
-    font-size: 24px;
-    color: #0775B4;
-    /* margin-left: 10%; */
-    margin: 0 auto;
-    text-align: center;
-}
-
-#texto-contatos {
-    font-size: 14px;
-/*     margin-left: 10%; */
-text-align: center;
-}
-
-#link{
-    padding-left: 50px;
-    
-}
-#insta{
-    padding-left: 50px;
-}
-#face{
-    margin-left: 70px;
-}
-
-input{
-    width: 430px;
-    height: 50px;
-    margin-left: 230px;
-    margin-top: 20px;
-    border: 0px;
-    border-radius: 10px;
-    padding-left: 20px;
-    font-family:"Poppins", sans-serif;
-    font-size: 14px;
-   background-color: #F5F5FF;
-}
-#box-text{
-    width: 430px;
-    height: 150px;
-    
-}
-#button{
-    width: 430px;
-    height: 50px;
-    margin-left: 230px;
-    margin-top: 19px;
-    border: 0px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    font-family:"Poppins", sans-serif;
-    font-weight: bolder;
-    font-size: 20px;
-    background-color: #0775B4;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #399FD8;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0px 1px 2px #399FD8;
-    transition-duration: 0.5s
-}
-#formulario {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container-imagem-doLado-contato{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    gap: 55px;
-}
-
-#fundo-roda-pe {
-    background-color: #222222;
-    padding-bottom: 50px;
-    width: 100vw;
-}
-
-#logo {
-    margin-left: 30px;
-    margin-top: 30px;
-}
-
-#textos {
-    margin: 0 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    line-height: 1.5;
-}
-
-
-#Partner{
-    color: white;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    gap: 80px;
-}
-#ConheçaaplugouwTech{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 80px;
-}
-
-#Ajuda,
-#Links {
-    color: white;
-    font-size: 17px;
-    text-align: left;
-}
-
-#redes {
-    text-align: center;
-    margin-top: 50px ;
-}
-
-#insta-black,
-#link-black {
-    padding-left: 10px;
-}
 
 a {
     color: white;
@@ -146,8 +12,345 @@ a {
 }
 
 
-@media (min-width: 650px) {
-    #titulo-contatos {
+#container-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#titulo-contatos {
+    font-size: 24px;
+    color: #0775B4;
+}
+
+#texto-contatos {
+    font-size: 14px;
+    color: #222222;
+}
+
+
+#link, #insta, #face {
+    width: 45px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+/*     background-color: #F5F5FF; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#link:hover {
+    background-color: #0a66c24f; 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(10, 102, 194, 0.3);
+}
+
+#insta:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(220, 39, 67, 0.3);
+}
+
+#face:hover {
+    background-color: #1876f231; 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(24, 119, 242, 0.3);
+}
+
+input {
+    width: 430px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: #F5F5FF;
+    color: #333;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #399FD8;
+    box-shadow: 0 0 8px rgba(57, 159, 216, 0.4);
+    outline: none;
+    background-color: #ffffff;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input:hover {
+    border-color: #0775B4;
+}
+
+
+#box-text{
+    width: 430px;
+    height: 150px;
+    
+}
+#button {
+    width: 430px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(90deg, #0775B4, #055a94);
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#button:hover {
+    background: linear-gradient(90deg, #399FD8, #0775B4);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0px 8px 12px rgba(57, 159, 216, 0.4);
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 55px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+}
+.container-form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+
+.container-imagem-doLado-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#fundo-roda-pe {
+    background-color: #222222;
+    padding-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    width: 100%;
+
+}
+
+#partner{
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+#container-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.header-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#partner p{
+    color: white;
+    font-size: 20px;
+}
+
+#container-links-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#link-footer {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#redes {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+@media (min-width: 1500px) {
+    #fundo-roda-pe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container-footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    
+    #partner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+    }
+
+    #partner p{
+        color: white;
+        font-size: 20px;
+    }
+
+    #container-links-footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 100px;
+        width: 50%;
+    }
+    #link-footer {
+        color: white;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 950px) {
+    #formulario{
+        flex-direction: column;
+        width: 80%;
+    }
+    #container-titulo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-form{
+        flex-direction: row;
+        padding: 0 20px;
+    }
+
+    #container-links-footer{
+        flex-direction: row;
+    }
+
+    #partner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #partner p{
+        color: white;
+        font-size: 20px;
+    }
+
+
+
+
+
+/*     #titulo-contatos {
         font-size: 20px;
         margin-left: 5%;
     }
@@ -156,48 +359,42 @@ a {
         font-size: 14px;
         margin-left: 5%;
     }
+ */
+   /*  input {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    } */
 
-    input {
+   /*  #button {
         width: 100%;
         max-width: 100%;
         margin-left: 0;
     }
-
-    #button {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-    }
-
-    #textos {
+ */
+  /*   #textos {
         margin: 0 5%;
         grid-template-columns: 1fr;
         text-align: center;
-    }
+    } */
 
-    #redes {
+  /*   #redes {
         margin-left: 5%;
         text-align: left;
-    }
-    #formulario {
+    } */
+  /*   #formulario {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
     }
+ */
+/*     .conatiner-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    } */
 
-    .conatiner-links{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-    #ConheçaaplugouwTech{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        gap: 80px;
-    }
-   
+
 }
