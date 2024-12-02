@@ -95,12 +95,17 @@ function filterPartners(event, elemento){
         }
     }
     else{
-        Array.from(document.getElementsByClassName("seta")).forEach(element => {
-            element.style.display = 'block';
-        });
+        if(CARDS_VISIVEIS >= 3){
+            // Trata as setas apenas em dispositivos com telas grandes
+            Array.from(document.getElementsByClassName("seta")).forEach(element => {
+                element.style.display = 'block';
+            });
+        }
+
         Array.from(LojasFiltradas).forEach(element => {
             element.style.display = 'block';
         });
+
         inicia();
     }
 
