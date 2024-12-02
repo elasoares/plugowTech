@@ -16,25 +16,25 @@ body {
 
 #imagem {
   width: 100%;
- display: flex;
- flex-flow: row wrap;
- align-items: center;
- justify-content: space-around;
- padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 80px;
 }
 
-.imagem-banner{
-  max-width: 450px;
-}
+
 .container-button{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    width: 100%;
 }
 .cta-button{
     background-color: #0A72AD;
     color: white;
-    padding: 10px 15px; 
+    padding: 13px 15px; 
     border: none;
     display: flex;
     align-items: center;
@@ -66,14 +66,23 @@ body {
 }
 
 
-
-
-.imagem-banner{
- display: none;
-
+.container-image-svg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.imagem-banner{
+  display: none;
+}
 
+.container-titulo-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 55px;
+}
 .container-imagem{
     display: flex;
     align-items: center;
@@ -81,6 +90,7 @@ body {
     flex-direction: column;
     gap: 55px;
     padding-bottom: 50px;
+    width: 100%;
  }
 
  #titulo-imagem{
@@ -96,44 +106,45 @@ body {
     text-align: center;
  }
 
-@media (min-width: 840px){
-  .container-imagem{
+
+
+
+@media(min-width: 1000px) {
+  #imagem{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .container-imagem{
+    flex-direction: row;
+    gap: 80px;
+    width: 50%;
+  }
+
+  .container-image-svg{
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+  }
+  .imagem-banner{
+    display: block;
+    width: 100%;
+    height: 500px;
+  }
+  .container-titulo-image {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   #texto-imagem{
-    text-align: center;
+    text-align: left;
   }
+
 }
 
 
-@media(min-width: 971px) {
-  .quem-pode-participar{  
-    bottom: -380px;
-    width: 60%;
-  }
-
-  .texto-quem-pode-participar{
-    padding-top: 50px;
-    
-  }
-}
-
-/* @media(max-width: 545px) {
- .texto-quem-pode-participar h2{
-  text-align: center;
-  font-size: 20px;
- }
-
- .container-imagem{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 55px;
- }
-} */
 
 
 
