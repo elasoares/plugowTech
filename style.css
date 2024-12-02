@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-/* Estrutura geral */
+
 body {
   padding: 0;
   background-color: white;
@@ -15,7 +15,6 @@ body {
 }
 
 #imagem {
-  /* border: 2px solid black; */
   width: 100%;
  display: flex;
  flex-flow: row wrap;
@@ -27,66 +26,53 @@ body {
 .imagem-banner{
   max-width: 450px;
 }
-
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cta-button{
-  background-color: #0A72AD;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  margin-top: 15px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
+    background-color: #0A72AD;
+    color: white;
+    padding: 10px 15px; 
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 0.5rem;
+    text-align: center;
+}
+.lojas-parceiras-button{
+    border: 1px solid #0A72AD;
+    color: #0A72AD;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: none;
 }
 
 .seta-pra-direita{
   width: 25px;
 }
 
-.secao-imagem{
-  display: flex;
-}
 
-.projeto-imagem{
-  object-fit: cover;
-  width: 100%;
-}
 
-.quem-pode-participar{
-  background-color: #F6F6F6;
-  /* border: 2px solid red; */
-  width: 90%;
-  display: flex;
-  margin: 0 auto;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  bottom: -180px;
-  left: 50%; 
-  transform: translateX(-50%); 
-}
 
-.texto-quem-pode-participar{
-  /* border: 2px solid blue; */
-  
-}
-
-.texto-quem-pode-participar h2{
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-}
-
-.imagem-aperto-de-mao{
-  width: 80%;
+.imagem-banner{
+ display: none;
 
 }
 
-.texto-quem-pode-participar ul li{
-  font-size: 24px;
-  margin-left: 25px;
-}
 
 .container-imagem{
     display: flex;
@@ -97,15 +83,20 @@ body {
     padding-bottom: 50px;
  }
 
- .titulo-imagem{
+ #titulo-imagem{
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1rem;
+    text-align: center;
+ }
+ #texto-imagem{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 18px;
     text-align: center;
  }
 
-@media (max-width: 840px){
+@media (min-width: 840px){
   .container-imagem{
     display: flex;
     flex-flow: column;
@@ -118,7 +109,7 @@ body {
 }
 
 
-@media(max-width: 971px) {
+@media(min-width: 971px) {
   .quem-pode-participar{  
     bottom: -380px;
     width: 60%;
