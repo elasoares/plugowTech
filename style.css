@@ -19,23 +19,10 @@ body {
 }
 
 
-#titleSection {
-    float: left;
-    width: 100%;
-    height: auto;
-    margin-top:2%;
-}
-
-#titleSection h1 {
+h1 {
     font-size: 1.5em;
     width: 100%;    
 }   
-
-#titleSection p {
-    font-size: 16px;
-    margin-top:10%;
-    width: 100%;
-}
 
 #carrossel {
     float:left;
