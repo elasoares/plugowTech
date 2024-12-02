@@ -23,11 +23,6 @@
                 <h1>Descubra as lojas parceiras e transforme suas compras em recompensas!</h1>
                 <div id="line"></div>
             </div>
-
-            <!-- <div class="search-bar">
-                <button>
-                    <i class="fa fa-bars"></i> Filtrar
-                </button>-->
                <!-- Barra de Pesquisa -->
             <div class="search-bar">
               <input type="text" id="search-input" placeholder="Pesquisar loja parceira"
@@ -38,13 +33,32 @@
             <div id="carrossel">
                 <!--Divisão dos Cards-->
                 <div id="div-cards">
-                    <img class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" src="icones/seta-esquerda.svg" alt="seta esquerda">
+                    <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
+                        <i class="fa fa-less-than"></i>
+                    </button>
                     <div id="cards-container">
-                        <img class="card" id="loja1" src="cards/loja1.svg" alt="" data-name="Hélio Russo Corretor de Imoveis">
-                        <img class="card" id="loja2" src="cards/loja2.svg" alt="" data-name="Borcelle Construção">
-                        <img class="card" id="loja3" src="cards/loja3.svg" alt="" data-name="Resolva Rápido Consertos e Entregas">
+                        <img class="card" id="loja1" src="cards/corstone.png" alt="" data-name="corstone" />
+                        <img class="card" id="loja2" src="cards/decortiles.png" alt="" data-name="decortiles" />
+                        <img class="card" id="loja3" src="cards/derosso.png" alt="" data-name="derosso" />
+                        <img class="card" id="loja4" src="cards/docol.png" alt="" data-name="docol" />
+                        <img class="card" id="loja5" src="cards/eliane.png" alt="" data-name="eliane" />
+                        <img class="card" id="loja6" src="cards/fiandre.png" alt="" data-name="fiandre" />
+                        <img class="card" id="loja7" src="cards/pormadeportas.png" alt="" data-name="pormadeportas" />
+                        <img class="card" id="loja8" src="cards/ritallio.png" alt="" data-name="ritallio" />
+                        <img class="card" id="loja9" src="cards/sda_automacao.png" alt="" data-name="automacao sda" />
+                        <img class="card" id="loja10" src="cards/stato_dellart.png" alt="" data-name="stato dellart" />
                     </div>
-                    <img class="seta" id="seta-direita" onclick="RolarParaDireita()" src="icones/seta-direita.svg" alt="seta direita">
+                    <button class="seta" id="seta-direita" onclick="RolarParaDireita()" alt="seta direita">
+                        <i class="fa fa-greater-than"></i>
+                    </button>
+                </div>
+                <div class="buttons-set d-none">
+                    <button class="button-seta" id="button-seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
+                        <i class="fa fa-less-than"></i>
+                    </button>
+                    <button class="button-seta" id="button-seta-direita" onclick="RolarParaDireita()" alt="seta direita">
+                        <i class="fa fa-greater-than"></i>
+                    </button>
                 </div>
             </div>
         </div>
