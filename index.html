@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivestyle.css">
     <script src="index.js" defer></script>
 </head>
 
@@ -33,9 +33,11 @@
             <div id="carrossel">
                 <!--Divisão dos Cards-->
                 <div id="div-cards">
-                    <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
-                        <i class="fa fa-less-than"></i>
-                    </button>
+                    <div class="seta-container">
+                        <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
+                            <i class="fa fa-less-than"></i>
+                        </button>
+                    </div>
                     <div id="cards-container">
                         <img class="card" id="loja1" src="cards/corstone.png" alt="" data-name="corstone" />
                         <img class="card" id="loja2" src="cards/decortiles.png" alt="" data-name="decortiles" />
@@ -48,9 +50,11 @@
                         <img class="card" id="loja9" src="cards/sda_automacao.png" alt="" data-name="automacao sda" />
                         <img class="card" id="loja10" src="cards/stato_dellart.png" alt="" data-name="stato dellart" />
                     </div>
-                    <button class="seta" id="seta-direita" onclick="RolarParaDireita()" alt="seta direita">
-                        <i class="fa fa-greater-than"></i>
-                    </button>
+                    <div class="seta-container">
+                        <button class="seta" id="seta-direita" onclick="RolarParaDireita()" alt="seta direita">
+                            <i class="fa fa-greater-than"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="buttons-set d-none">
                     <button class="button-seta" id="button-seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
