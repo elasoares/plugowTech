@@ -54,21 +54,19 @@ h1 {
 
 #div-cards {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     margin-left:6.5%;
 }
 
 #cards-container {
-    flex: 3;
-    display:flex;
-    gap:80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
 }
 
-.card {
-    flex: 3;
-    max-width: 20%;
+.card {    
+    max-width: 100%;
     border-radius:8px;
-    box-shadow: 1px 1px 3px;
 }
 
 .card:hover {
@@ -90,11 +88,7 @@ h1 {
     width: 50px;
     height: 50px;
     border: solid 1px #c4c4c4;
-}
-
-#seta-direita {
-    float:left;
-    margin-left: -1400%;
+    flex-shrink: 2;
 }
 
 .seta-container .seta i {
@@ -114,22 +108,24 @@ h1 {
 
 @media screen and (max-width:680px){
 
-    #div-cards {
-        margin-left:0%;
-        width: 100%;
+    #div-cards {        
+        width: 90%;
     }
-    .card {
-        align-items: center;
-        max-width: 95%;
+    
+    #cards-container {
+        width: 100%;        
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    #seta-direita {
-        margin-left:-55%;
+    .card {
+        align-items: center;
+        min-width: 100%;
     }
 
     .search-bar {
         margin-top:8%;
-        margin-left:0%;
+        margin-left:4%;
         margin-bottom:8%;
     }
     .search-bar input {
@@ -137,3 +133,4 @@ h1 {
     }
     
 }
+

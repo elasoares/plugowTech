@@ -75,11 +75,7 @@ function RolarParaEsquerda(){
 
 function filterPartners(event, elemento){
     let key = event.key;    
-    if ((elemento.value.length > 3) && (alphabet.indexOf(key) > -1) || (numbers.indexOf(key) > -1)){
-        Array.from(document.getElementsByClassName("seta")).forEach(element => {
-            element.style.display = 'none';
-        });
-        // faz a busca nos parceiros
+    if ((elemento.value.length >= 3) && (alphabet.indexOf(key) > -1) || (numbers.indexOf(key) > -1)){
         let termo = elemento.value.toLowerCase();
         for (let i=0; i < LojasVirtuais.length; i++) {
             let card = LojasVirtuais[i];
@@ -95,13 +91,6 @@ function filterPartners(event, elemento){
         }
     }
     else{
-        // if(CARDS_VISIVEIS >= 3){
-        //     // Trata as setas apenas em dispositivos com telas grandes
-        //     Array.from(document.getElementsByClassName("seta")).forEach(element => {
-        //         element.style.display = 'block';
-        //     });
-        // }
-
         Array.from(LojasFiltradas).forEach(element => {
             element.style.display = 'block';
         });
