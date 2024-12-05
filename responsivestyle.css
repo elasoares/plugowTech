@@ -1,0 +1,136 @@
+/* ----- Quinto Branche: Karla -----*/
+*{
+    margin: 0px;
+    font-family: 'Poppins';
+}
+body {
+    background-color: #f6f6f6;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 1444px;
+    margin:0px auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#wrapper {
+    flex:1 100%;
+    margin: 0px auto;
+    padding:0%;
+}
+
+.header {
+    flex:1;
+    margin-top:3%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-bar {
+    flex:1;
+    width: 100%;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+.search-bar input {
+    flex: 1;
+    margin-left: 13%;
+    width: 39%;
+    height: 35px;
+    border-radius: 25px;
+    border: solid 1px #298cc5;
+    text-indent: 2%;
+}
+
+#carrosel {
+    flex: 1;
+}
+
+#div-cards {
+    display: flex;
+    /* width: 100%; */
+    margin-left:6.5%;
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+.card {    
+    max-width: 100%;
+    border-radius:8px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.seta-container {
+    width: 50px;
+    padding: 1%;
+    justify-content: center;
+    display: flex;
+}
+.seta-container .seta {
+    align-self: center;
+    cursor: pointer;
+    border-radius: 48px;
+    width: 50px;
+    height: 50px;
+    border: solid 1px #c4c4c4;
+    flex-shrink: 2;
+}
+
+.seta-container .seta i {
+    font-size: 0.8em;
+}
+
+.seta:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+    background-color: #298cc5;
+    color: #fff;
+}
+
+.d-none {
+    display:none;
+}
+
+@media screen and (max-width:680px){
+
+    #div-cards {        
+        width: 90%;
+    }
+    
+    #cards-container {
+        width: 100%;        
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .search-bar {
+        margin-top:8%;
+        margin-left:4%;
+        margin-bottom:8%;
+    }
+    .search-bar input {
+        width: 70%;
+    }
+    
+}
