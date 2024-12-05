@@ -1,138 +1,132 @@
-* {
+/* Estilo Base */
+body {
   margin: 0;
   padding: 0;
-  font-family: "Inter";
+  font-family: 'Inter';
   box-sizing: border-box;
 }
 
-/* Estrutura geral */
-body {
-  padding: 0;
-  background-color: white;
+/* Seção Principal (Partnership) */
+.partnership-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-#imagem {
-  position: relative; 
-  margin: 10px 35px 55px 1px;
-  grid-auto-flow: column;
-}
-#titulo-imagem {
-  color: #242527;
-  text-align: left;
-  margin-top: 75px;
-  margin-left: 0px;
+.partnership-section .content {
+  max-width: 50%;
 }
 
-/* Container principal */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  border-radius: 0px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* SVG */
-svg {
-  width: 100%;
-  height: auto;
-  max-width: 1444px;
-  margin: 0 auto;
-}
-
-#imagem {
-  position: relative;
-  display: grid;
-  grid-auto-flow: column;
-  margin: 10px 35px 55px 100px;
-  background-size: 50px;
-}
-
-
-
-#titulo {
-  font-size: 24px;
+.partnership-section h1 {
+  font-size: 2rem;
   color: #333;
+  margin-bottom: 1rem;
 }
 
-#texto {
-color: #555;
-margin-top: 10px;
-margin: 10px 25px 75px 25px;
+.partnership-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .cta-button {
+  display: inline-block;
   padding: 0.8rem 1.5rem;
-  margin-top: 25px;
-  font-size: 1rem;
-  background-color: #0a72ad;
+  background-color: #0A72AD;
   color: #fff;
-  border: none;
-  border-radius: 4px; 
-  cursor: pointer;
-  transition: background-color 0.3s;
-  z-index: 3;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-
-/* Main Content */
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 20px;
-  text-align: center;
+.cta-button:hover {
+  background-color: #0056b3;
 }
 
-.main-content img {
+.partnership-section .image {
+  max-width: 40%;
+}
+
+.partnership-section .image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
-/* Info Section */
-.info-section {
-  flex: 1;
-  min-width: 300px;
-  margin: 20px;
+/* Imagem Central com Sobreposição */
+.container {
+  position: relative;
+  max-width: 100%; 
+  height: auto;
+  margin: 0 auto;
 }
 
-.info-section h2 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.info-section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info-section ul li {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 8px;
+.imagem-sobreposta {
+  position: absolute;
+  top: 105%;
+  left: 54%;
+  transform: translate(-50%, -50%);
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .partnership-section {
+    gap: 1.5rem; 
+  }
+
+  .partnership-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .partnership-section p {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
-}
-  .main-content {
+  .partnership-section {
     flex-direction: column;
+    text-align: center;
   }
-@media screen and (max-width:  768px) {
-  .container{
-    display: block;
-    background-image: none;
 
+  .partnership-section .content {
+    max-width: 100%;
   }
-  .container{
-    width: 50vw;
+
+  .partnership-section .image {
+    max-width: 100%;
+    margin: 0 auto;
   }
-  .container_caixa{
-    margin: 2em 2m;
+
+  .texto-sobreposto {
+    font-size: 1.5rem;
+  }
+
+  .imagem-sobreposta {
+    width: 70%; 
   }
 }
-  
 
+@media (max-width: 480px) {
+  .partnership-section {
+    padding: 1rem;
+  }
+
+  .partnership-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .partnership-section p {
+    font-size: 0.85rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
