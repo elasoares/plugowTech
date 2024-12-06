@@ -11,8 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="responsivestyle.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="responsivestyle.css">    
 </head>
 
 <body>
@@ -23,11 +22,22 @@
                 <h1>Descubra as lojas parceiras e transforme suas compras em recompensas!</h1>
                 <!--  <div id="line"></div> -->
             </div>
-               <!-- Barra de Pesquisa -->
-            <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Pesquisar loja parceira"
-                onkeyup="filterPartners(event, this)" onkeydown="filterPartners(event, this)">
-            </div> 
+            <!-- Barra de Pesquisa -->
+         <!-- <div class="search-bar">
+             <input type="text" id="search-input" placeholder="Pesquisar Fornecedores"
+             onkeyup="filterPartners(event, this)" onkeydown="filterPartners(event, this)">
+         </div> -->
+
+            <div id="lojas-parceiras">
+                <div>
+                    <img class="parceiro" src="cards/onehouse.png" alt="" data-name="one house" />
+                    <img class="parceiro" src="cards/grupomaxi.png" alt="" data-name="grupo maxxi" />
+                </div>
+            </div>
+
+            <div class="title">
+                <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
+            </div>
 
             <!--CARROSSEL-->
             <div id="carrossel">
@@ -39,10 +49,8 @@
                         </button>
                     </div>
                     <div id="cards-container">
-                        <img class="card" src="cards/onehouse.png" alt="" data-name="one house" />
                         <img class="card" src="cards/lexxa.png" alt="" data-name="lexxa" />
                         <img class="card" src="cards/mosarte.png" alt="" data-name="mosarte" />
-                        <img class="card" src="cards/grupomaxi.png" alt="" data-name="grupo maxxi" />
                         <img class="card" src="cards/derosso.png" alt="" data-name="derosso" />
                         <img class="card" src="cards/docol.png" alt="" data-name="docol" />
                         <img class="card" src="cards/eliane.png" alt="" data-name="eliane" />
@@ -75,17 +83,19 @@
                         </button>
                     </div>
                 </div>
-                <div class="buttons-set d-none">
-                    <button class="button-seta" id="button-seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
-                        <i class="fa fa-less-than"></i>
-                    </button>
-                    <button class="button-seta" id="button-seta-direita" onclick="RolarParaDireita()" alt="seta direita">
-                        <i class="fa fa-greater-than"></i>
-                    </button>
-                </div>
             </div>
+            <div class="d-none" id="paginator"></div>
         </div>
     </div>
+    <script src="index.js" defer></script>
+    <script type="text/javascript">
+        window.setInterval(
+            () =>{
+                RolarParaDireita();
+            },
+            2000
+        );
+    </script>
 </body>
 
 </html>
