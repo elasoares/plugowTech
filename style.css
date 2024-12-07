@@ -268,6 +268,63 @@ nav ul li a:hover {
 }
 
 /* Responsividade */
+@media (max-width: 1150px)  {
+
+
+    .viagem-img {
+        max-width: 400px;
+        height: auto;
+        margin-left: 0%;
+    }
+
+    .text-content h1 {
+        font-size: 44px;
+    }
+
+    .text-content p {
+        font-size: 17px;
+        margin-top: 10%;
+    }
+
+    .btn-saiba-mais {
+        font-size: 20px;
+        width: 130px;
+    }
+
+    .info-box {
+        width: 60%; 
+        height: 140px;
+        display: flex;
+    }
+
+    .info-box h3 {
+        font-size: 18px;
+    }
+
+    .info-box p{
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #C4C4C4;
+        font-size: 19px;
+        padding: 4px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .cadastro {
+        font-size: 14px;
+        width: auto;
+    }
+    
+    .login {
+        font-size: 14px;
+        margin-left: 0%;
+    }
+}
+
 
 
 @media (max-width: 1024px)  {
@@ -313,7 +370,7 @@ nav ul li a:hover {
     nav ul li a {
         text-decoration: none;
         color: #C4C4C4;
-        font-size: 15px;
+        font-size: 17px;
         padding: 4px;
         border-radius: 10px;
         transition: all 0.3s ease;
@@ -372,7 +429,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        font-size: 12px !important;
+        font-size: 14px !important;
         padding: 6px;
         border-radius: 10px;
     }
@@ -447,7 +504,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        font-size: 8px;
+        font-size: 10px;
         padding: 0px;
         border-radius: 2px;
     }
@@ -527,7 +584,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        font-size: 10px !important;
+        font-size: 9px !important;
         padding: 0px;
         border-radius: 2px;
     }
