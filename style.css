@@ -340,7 +340,7 @@ nav ul li a:hover {
     }
 
     .text-content h1 {
-        font-size: 44px;
+        font-size: 37px;
     }
 
     .text-content p {
@@ -377,15 +377,31 @@ nav ul li a:hover {
     }
 
     .cadastro {
-        font-size: 14px;
+        font-size: 12px;
         width: auto;
     }
     
     .login {
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 0%;
     }
 }
+
+@media (max-width: 970px) {
+
+    .text-content h1 {
+        font-size: 33px;
+    }
+
+    .text-content p {
+        font-size: 12px;
+        margin-top: 10%;
+    }
+}
+
+
+
+
 
 @media (max-width: 850px) {
 
@@ -629,11 +645,11 @@ nav ul li a:hover {
     }
 
     .text-content h1 {
-        font-size: 18px;
+        font-size: 21px;
     }
 
     .text-content p {
-        font-size: 8px;
+        font-size: 6px;
         margin-top: 12%;
     }
     
@@ -778,5 +794,3 @@ nav ul li a:hover {
         display: none; /* Esconde os botões em telas pequenas */
     }
 }
-
-
