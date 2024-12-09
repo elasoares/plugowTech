@@ -1,0 +1,1133 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right bottom, #302f2f, #222222);
+    color: #FFFFFF;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*=============== Menu ===============*/
+
+/* Ícone do menu hambúrguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    width: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+/* Menu escondido por padrão */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Menu lateral para telas menores */
+.nav-menu.hidden {
+    display: none;
+}
+
+.nav-menu.show {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Links do menu */
+.nav-menu.show li {
+    margin-bottom: 15px;
+}
+
+.nav-menu.show li a {
+    font-size: 20px;
+    color: #C4C4C4;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu.show li a:hover {
+    color: #FFFFFF;
+    background-color: #3f3e3e;
+    transform: scale(1.1);
+}
+
+/* Botões de Login e Cadastro */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons.hidden {
+    display: none;
+}
+
+.nav-menu.show~.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+/*=============== Cabeçalho ===============*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #C4C4C4;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    background-color: #3f3e3e;
+    transform: scale(1.1);
+}
+
+.nav-menu .login-item,
+.nav-menu .cadastro-item {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botões de Login e Cadastro */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.cadastro,
+.login {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cadastro {
+    background: none;
+    border: 1px solid #60BBEE;
+    color: #60BBEE;
+}
+
+.login {
+    background: linear-gradient(to bottom, #60BBEE, #0A72AD);
+    color: white;
+}
+
+
+/*=============== Seção: Introdução e Imagem ===============*/
+#intro-section {
+    justify-content: center;
+    display: block;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.text-content {
+    & > h1 {
+        font-size: 52px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+    }
+
+    & > p {
+        font-size: 22px;
+        margin-top: 10%;
+    }    
+}
+
+.viagem-img {
+    max-width: 500px;
+    height: auto;
+    margin-left: 20%;
+}
+
+/* Caixa de informação inferior */
+.btn-saiba-mais {
+    background: linear-gradient(to bottom, #60BBEE, #0A72AD);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 90px;
+    margin-left: 5%;
+    padding-top: 17px;
+}
+
+.btn-saiba-mais:hover {
+    opacity: 0.9;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo do box de informações */
+.info-box {
+    display: flex;
+    background: linear-gradient(to right, #60BBEE, #0A72AD);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    height: 140px;
+}
+
+/* Estilização do texto */
+.info-box {
+    & > h3 {
+    margin-left: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 35px;
+    text-align: center;
+    }
+
+    & > p {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.5;
+        /* Dá espaçamento entre linhas do texto */
+        padding-top: 48px;
+        padding-left: 10%;
+    }
+}
+
+/*=============== Seção: O que é o Partnership? ===============*/
+.partnership-section {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 2rem;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.partnership-section .content {
+    max-width: 50%;
+}
+
+.partnership-section h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.partnership-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #0A72AD;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.partnership-section .image {
+    max-width: 40%;
+}
+
+.partnership-section .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Imagem Central com Sobreposição */
+.container- {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.imagem-sobreposta {
+    position: absolute;
+    top: 105%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+}
+
+/*=============== Seção: Como Funciona? ===============*/
+#como-funciona {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+    width: 100%;
+}
+
+/* ----- Header----- */
+.como-funciona-header {
+    display: flex;
+    align-items: flex-end; /* Alinha conteúdo ao final verticalmente */
+    justify-content: space-between; /* Distribui logo e espaço entre elementos */
+    margin-top: 69px;
+    position: relative; /* Necessário para centralizar o título com posição absoluta */
+    height: 100px; /* Altura definida para o cabeçalho */
+}
+
+.como-funciona-header {
+    & > h1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        font-family: "Lato", sans-serif;
+        color: #000;
+        margin: 0;
+    }
+}
+
+.logo {
+    & > img {
+        width: 130px;
+        height: auto;
+    }
+}
+
+/* ----- Steps ----- */
+.background-caminho {
+    scale: 0.85;
+    position: absolute;
+    margin: 165px 374px 345px 180px;
+}
+
+.steps {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.step-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.step-row .text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.step-row .image {
+    flex: 1;
+    text-align: center;
+}
+
+.step-row img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.step-row:nth-child(4) .image img {
+    transform: scale(1.5); /* Aumenta a escala da ultima imagem (troque.svg) */
+}
+
+/* ----- Círculo com número e título alinhado ----- */
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #230B34;
+    color: #F8F8FA;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.step-header h2 {
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif;
+    color: #2387C0;
+    margin: 0;
+}
+
+.step-row p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/*=============== A PARTIR DESTE PONTO, FIZ PEQUENOS AJUSTES PARA A APRESENTAÇÃO DO DIA 09/12 ===============*/
+.experiencias{
+    font-family: "Poppins", sans-serif;
+    background: #F6F6F6;
+    padding-inline: 15px;
+    padding-bottom: 80px;
+}
+
+.experiencias-container-texto {
+    font-size: 24px;
+    color: #777777;
+    /* border: 2px solid black; */
+    max-width: 1000px;
+
+    & > h2 {
+        font-size: 40px;
+        margin-bottom: 12px;
+        color: #000;
+    }
+}
+
+.experiencias-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.experiencias-container-texto{
+    padding-block: 80px;
+    padding-left: 40px;
+}
+
+.card1{
+    width: 315px;
+    /* border: 2px solid black; */
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0 0 ;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card1:hover{
+    box-shadow: 10px 10px 30px gray;
+    transform: translateY(-10px) !important;
+}
+
+.card1 .img{
+    width: 100%;
+}
+
+.card-header{
+    text-align: center;
+
+    & > h3 {
+        font-size: 24px;
+        color: #0B132A;
+    }
+
+    & > p {
+        font-size: 16px;
+        /* border: 2px solid black; */
+        height: 25px;
+        margin-bottom: 8px;
+        color: #0B132A;
+    }
+}
+
+.card1 .ul{
+    padding-inline: 35px;
+
+    & > p{
+        font-size: 14px;
+        margin-left: -20px;
+        color: #0B132A;
+    }
+}
+
+.card1 .ul li{
+    font-size: 16px;
+    color: #505050;
+}
+
+@media (max-width: 1334px){
+    .experiencias-container{
+        justify-content: space-around;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 1004px){
+    .experiencias-container-texto{
+        text-align: center;
+        padding-left:0;
+        /* border: 2px solid red; */
+    }
+}
+
+@media (max-width: 424px){
+    .experiencias .h2{
+        font-size: 30px;
+    }
+
+    .experiencias-container-texto .p{
+        font-size: 18px;
+        margin-bottom: -50px;
+    }
+}
+
+/* ----- Quinto Branche: Karla -----*/
+
+
+#wrapper {
+    float:left;
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-size: 1.5em;
+    width: 100%;    
+}   
+
+#carrossel {
+    float:left;
+    width: 100%;
+}
+
+#line {
+    margin-top:1%;
+    height: 5px;
+    width: 50%;
+    background-color: #298cc5;
+}
+.search-bar {
+    float:left;
+    margin: 2% 0%;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 1%;
+    float:left;
+    width: 43%;
+    margin-left:9%;
+    border: 1px solid #298cc5;
+    height: 15px;
+    border-radius: 50px;
+    text-indent: 15px;
+}
+.search-bar input:active {
+    border-color:#298cc5;
+}
+
+.search-bar input:focus-visible {
+    border: solid 1px #298cc5;
+}
+.d-none {
+    display: none;
+}
+#div-cards{
+    margin-top: 25px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#cards-container {
+    float:left;
+    margin:20px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 62px;
+    width: 100%;
+}
+
+.card {
+    display:flex;
+    height: 186px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#seta-esquerda{
+    display: block ;
+}
+
+.seta{
+    float:left;
+    margin-top: 85%;
+    cursor: pointer;
+    border-radius: 48px;
+    width: 45px;
+    height: 45px;
+    border: solid 1px #c4c4c4
+}
+
+.seta:hover {
+    background-color: #60ddee;
+}
+
+.seta:hover i {
+    font-weight: bold;
+    color: #fff;
+}
+
+.seta #seta-esquerda {
+    margin-left:50%;
+}
+.seta #seta-direita {
+    margin-left:10%;
+}
+
+.seta i {
+    margin:45% 35%;
+    font-size: 10px
+}
+
+.seta:hover{
+    transform: translateY(-7px);
+    transition: 0.5s;
+}
+
+/* Para celulares */
+@media (max-width: 480px){
+    div#container {
+        float:left;
+        margin:0;
+        padding: 2%;
+        width: 95%;
+    }
+
+    div#wrapper {
+        float:left;
+        width: 90%;
+        padding: 10%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .search-bar {
+        float:left;
+        margin-top:5%;
+        margin-left:-5%;
+    }
+
+    .search-bar input {
+        height: 40px;
+        width: 75%;
+    }
+
+    #cards-container {
+        margin: 0px;
+        margin-left:-1%;
+    }
+
+    .card {
+        height: 190px;
+    }
+
+    .seta {
+        display:none;
+    }
+    .seta#seta-esquerda {
+        display: none;
+    }
+    /* .seta #seta-direita {
+        float:right;
+        margin-right:75%;
+    } */
+    .d-none {
+        display: block;
+    }
+
+    .buttons-set {
+        float:left;
+        height: 40px;
+        margin-top: 5%;
+        width: 68%;
+        padding-left: 25%;
+    }
+
+    .button-seta {
+        float:left;
+        border-radius:50px;
+        border: solid 1px #c4c4c4;
+        width: 40px;
+        height: 40px;
+        margin: 5%;
+    }
+
+    .button-seta i {
+        font-size: 10px;
+    }
+
+}
+/* Para tablets */
+@media (min-width: 768px) {
+    /* Estilos para telas maiores que 768px */
+    .search-bar input {
+        margin-left:12%;
+    }
+    .seta {
+        margin-left: 20%;
+    }
+}
+
+/* Para desktops */
+@media (min-width: 1024px) {
+    /* Estilos para telas maiores que 1024px */
+}
+
+/* Para telas grandes */
+@media (min-width: 1440px) {
+    /* Estilos para telas maiores que 1440px */
+}
+
+
+/* ----- Sexto Branche: Gabriel Sant'ana -----*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#container-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#titulo-contatos {
+    font-size: 24px;
+    color: #0775B4;
+}
+
+#texto-contatos {
+    font-size: 14px;
+    color: #222222;
+}
+
+
+#link, #insta, #face {
+    width: 45px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+/*     background-color: #F5F5FF; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+#link:hover {
+    background-color: #0a66c24f; 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(10, 102, 194, 0.3);
+}
+
+#insta:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(220, 39, 67, 0.3);
+}
+
+#face:hover {
+    background-color: #1876f231; 
+    width: 55px;
+    height: 55px;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 8px rgba(24, 119, 242, 0.3);
+}
+
+input {
+    width: 430px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: #F5F5FF;
+    color: #333;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #399FD8;
+    box-shadow: 0 0 8px rgba(57, 159, 216, 0.4);
+    outline: none;
+    background-color: #ffffff;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+input:hover {
+    border-color: #0775B4;
+}
+
+
+#box-text{
+    width: 430px;
+    height: 150px;
+    
+}
+#button {
+    width: 430px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    background: linear-gradient(90deg, #0775B4, #055a94);
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+#button:hover {
+    background: linear-gradient(90deg, #399FD8, #0775B4);
+    color: white;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0px 8px 12px rgba(57, 159, 216, 0.4);
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 55px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+}
+.container-form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+
+.container-imagem-doLado-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+    width: 100%;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#fundo-roda-pe {
+    background-color: #222222;
+    padding-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* position: fixed; */
+    bottom: 0;
+}
+
+.container-footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:50px;
+    width: 100%;
+
+}
+
+#partner{
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+#container-logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.header-footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#partner p{
+    color: white;
+    font-size: 20px;
+}
+
+#container-links-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#link-footer {
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#redes {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+
+@media (min-width: 1500px) {
+    #fundo-roda-pe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .container-footer{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    
+    #partner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+    }
+
+    #partner p{
+        color: white;
+        font-size: 20px;
+    }
+
+    #container-links-footer{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 100px;
+        width: 50%;
+    }
+    #link-footer {
+        color: white;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 950px) {
+    #formulario{
+        flex-direction: column;
+        width: 80%;
+    }
+    #container-titulo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container-form{
+        flex-direction: row;
+        padding: 0 20px;
+    }
+
+    #container-links-footer{
+        flex-direction: row;
+    }
+
+    #partner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #partner p{
+        color: white;
+        font-size: 20px;
+    }
+
+}

@@ -30,6 +30,31 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 1.65em;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+#lojas-parceiras {
+    display: flex;
+    width:auto;
+    margin-left: 25%;
+    margin-top:3%;
+    margin-bottom: 5%;
+}
+
+#lojas-parceiras div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    width:auto;
+}
+
+.parceiro {
+    min-width: 120%;
+    border-radius:8px;
 }
 
 .search-bar {
@@ -41,8 +66,8 @@ h1 {
 
 .search-bar input {
     flex: 1;
-    margin-left: 13%;
-    width: 39%;
+    margin-left: 25%;
+    width: 45%;
     height: 35px;
     border-radius: 25px;
     border: solid 1px #298cc5;
@@ -55,22 +80,24 @@ h1 {
 
 #div-cards {
     display: flex;
-    /* width: 100%; */
-    margin-left:6.5%;
+    margin-top:6%;
+    margin-left:5%;
+    
 }
 
 #cards-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .card {    
-    max-width: 100%;
+    max-width: 65%;
     border-radius:8px;
+    margin-left:18%;
 }
 
-.card:hover {
+.card:hover, .parceiro:hover {
     transform: translateY(-7px);
     transition: 0.5s;
     cursor: pointer;
@@ -80,10 +107,10 @@ h1 {
     width: 50px;
     padding: 1%;
     justify-content: center;
-    display: flex;
+    display: flex;    
 }
 .seta-container .seta {
-    align-self: center;
+    align-self:center;
     cursor: pointer;
     border-radius: 48px;
     width: 50px;
@@ -91,6 +118,15 @@ h1 {
     border: solid 1px #c4c4c4;
     flex-shrink: 2;
 }
+/* #seta-esquerda {
+    float:left;
+    margin-left: -50%;
+}
+
+#seta-direita {
+    float:right;
+    margin-right: -50%;
+} */
 
 .seta-container .seta i {
     font-size: 0.8em;
@@ -103,14 +139,42 @@ h1 {
     color: #fff;
 }
 
-.d-none {
-    display:none;
+#paginator {
+    width: auto;
+    height: 32px;
+    margin-top:2%;
+    display:flex;
+    margin-left:45%;
+}
+
+.pagina {
+    text-decoration: none;
+    width: 4px;
+    height: 4px;
+    padding: 0.5%;
+    margin:1%;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.selected {
+    background-color: #298cc5;
 }
 
 @media screen and (max-width:680px){
 
+    h1 {
+        font-size: 1.45em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+
     #div-cards {        
         width: 90%;
+        margin-top:5%;
     }
     
     #cards-container {
@@ -121,16 +185,27 @@ h1 {
 
     .card {
         align-items: center;
-        min-width: 100%;
+        max-width: 65%;
+        margin-left:18%;
     }
+
+    #lojas-parceiras div {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        width:auto;
+    }    
 
     .search-bar {
         margin-top:8%;
-        margin-left:4%;
+        margin-left:-14%;
         margin-bottom:8%;
     }
     .search-bar input {
         width: 70%;
+    }
+    .d-none {
+        display:none !important;
     }
     
 }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartnerShip</title>
+
+    <!-- Links para folhas de estilo -->
+    <link rel="stylesheet" href="styles-sendo-organizado.css">
+    <link rel="stylesheet" href="responsivestyle.css">
+
+    <!-- Fontes do Google Fonts -->
+    <!-- Pré-conexões para otimizar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fontes específicas para o projeto -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícones do Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Script externo com carregamento assíncrono -->
+    <script src="script.js" defer></script>
+
+    <!-- Adicionando animações -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <header>
+        <!-- Script para alternar o menu -->
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('.nav-menu');
+                const buttons = document.querySelector('.buttons');
+                navMenu.classList.toggle('show');
+                buttons.classList.toggle('hidden');
+            }
+        </script>        
+    
+        <!-- Logotipo -->
+        <div class="logo">
+            <img src="img/icon-pather.svg" alt="Logo Partner" class="logo-img">
+        </div>
+    
+        <!-- Ícone de menu (hamburguer) para dispositivos móveis -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    
+        <!-- Navegação principal -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Lojas Parceiras</a></li>
+                <li><a href="#">Prêmios</a></li>
+                <li><a href="#">Contato</a></li>
+                <li class="login-item"><a href="#">Login</a></li>
+                <li class="cadastro-item"><a href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Botões de login e cadastro -->
+        <div class="buttons">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="cadastro">Cadastre-se</a>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Seção 1: Introdução e Imagem -->
+        <section id="intro-section">
+            <div class="text-and-image">
+                <div class="text-content">
+                    <h1>Ganhe especificando
+                        <br>nossas lojas parceiras
+                        <br>e viva experiências
+                        <br>incríveis.
+                    </h1>
+                    <p>Acumule pontos a cada compra e indique profissionais para<br>
+                        transformar suas interações em experiências incríveis.</p>
+                </div>
+                <div class="image-content">
+                    <img src="img/img-viagem.svg" alt="Imagem de viagem" class="viagem-img">
+                </div>
+            </div>
+            <div class="info-section">
+                <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                <div class="info-box">
+                    <h3>Parcerias de Sucesso</h3>
+                    <p>Nosso programa foca em oferecer benefícios reais e experiências incríveis.</p>
+                </div>
+            </div>
+        </section>
+    
+
+    
+        <!-- Seção 3: O que é o Partnership? -->
+        <section class="partnership-section">
+            <div class="content">
+                <h1>O que é o Partnership?</h1>
+                <p>
+                    Um programa de pontuação que preza pela <br>
+                    parceria, onde o principal objetivo é cuidar do <br>
+                    relacionamento comercial, pois acreditamos ser <br>
+                    fundamental para impulsionar o crescimento e o <br>
+                    sucesso em um mercado cada vez mais <br>
+                    competitivo e dinâmico.
+                </p>
+                <a href="#" class="cta-button">Quero fazer parte ➔</a>
+            </div>
+            <div class="image">
+                <img src="img/imagem-partnership.svg" alt="Ilustração sobre parceria e crescimento">
+            </div>
+        </section>
+        
+        <!-- Seção 4: Como Funciona? -->
+        <section id="como-funciona">
+            <div id="como-funciona-container">
+                <div class="como-funciona-header">
+                    <div class="logo">
+                        <img src="img/engrenagem.svg" alt="Logo">
+                    </div>
+                    <h1><strong>Como</strong> Funciona?</h1>
+                </div>
+        
+                <div class="steps">
+                    <img src="img/caminho.svg" class="background-caminho" alt="">
+        
+                    <!-- Passo 1 -->
+                    <div class="step-row">
+                        <div class="text">
+                            <div class="step-header">
+                                <div class="step-number">1</div>
+                                <h2>Compre</h2>
+                            </div>
+                            <p>A cada compra realizada em nossas lojas parceiras, você ganha pontos.</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/compre.svg" alt="Compre">
+                        </div>
+                    </div>
+        
+                    <!-- Passo 2 -->
+                    <div class="step-row reverse">
+                        <div class="text">
+                            <div class="step-header">
+                                <div class="step-number">2</div>
+                                <h2>Acumule</h2>
+                            </div>
+                            <p>Com nosso sistema de pontuação, você acumula pontos a cada compra em nossas lojas parceiras.
+                                Quanto
+                                mais você participar, mais pontos você ganha. Aproveite essa oportunidade!</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/acumule.svg" alt="Acumule">
+                        </div>
+                    </div>
+        
+                    <!-- Passo 3 -->
+                    <div class="step-row">
+                        <div class="text">
+                            <div class="step-header">
+                                <div class="step-number">3</div>
+                                <h2>Troque</h2>
+                            </div>
+                            <p>Converta seus pontos em experiências incríveis.</p>
+                        </div>
+                        <div class="image">
+                            <img src="img/troque.svg" alt="Troque">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Seção 5: Experiências -->
+        <section class="experiencias">
+            <div class="experiencias-container-texto headline">
+                <h2>Transforme pontos em experiência</h2>
+                <p>Conheça agora algumas das experiências que nossos parceiros poderão viver no PartnerShip</p>
+            </div>
+            <div class="experiencias-container">
+                <!-- Card 1 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/orlando-disney.png" alt="Orlando">
+                    <div class="card-header">
+                        <h3>Orlando</h3>
+                        <p>Disney</p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>5 dias/ 4 noites;</li>
+                        <li>Ingresso Park.</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/paris.png" alt="Paris">
+                    <div class="card-header">
+                        <h3>Paris</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>5 dias/ 4 noites.</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/milao.png" alt="Milão">
+                    <div class="card-header">
+                        <h3>Milão</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã.</li>
+                    </ul>
+                </div>
+                <!-- Card 4 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/japao.png" alt="Japão">
+                    <div class="card-header">
+                        <h3>Japão</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>5 dias/ 4 noites.</li>
+                    </ul>
+                </div>
+                <!-- Card 5 -->
+                <div class="card1 headline" id="card1">
+                    <img class="img" style="border-radius: 12px 12px 0 0 " src="img/foz-do-iguacu.png" alt="Foz do Iguaçu">
+                    <div class="card-header">
+                        <h3>Foz do Iguaçu - PR.</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>3 dias/ 2 noites.</li>
+                    </ul>
+                </div> 
+                <!-- Card 6 -->
+                <div class="card1 headline" id="card1">
+                    <img class="img" src="img/paraty.png" alt="Paraty">
+                    <div class="card-header">
+                        <h3>Paraty</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>3 dias/ 2 noites.</li>
+                    </ul>
+                </div> 
+                <!-- Card 7 -->
+                <div class="card1 headline" id="card1">
+                    <img class="img" src="img/ilha-bela.png" alt="Ilhabela">
+                    <div class="card-header">
+                        <h3>Ilhabela</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>3 dias/ 2 noites.</li>
+                    </ul>
+                </div> 
+                <!-- Card 8 -->
+                <div class="card1 headline" id="card1">
+                    <img class="img" src="img/cruzeiro-costa-brasileira.png" alt="Cruzeiro costa brasileira">
+                    <div class="card-header">
+                        <h3>Cruzeiro costa </br> brasileira</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Pensão completa;</li>
+                        <li>Embarque em Santos;</li>
+                        <li>4 dias.</li>
+                    </ul>
+                </div> 
+                <!-- Card 9 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/milao-salone.png" alt="Milão">
+                    <div class="card-header">
+                        <h3>Milão</h3>
+                        <p>Salone Del Mobile</p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>Ingresso Salone del Mobile.</li>
+                    </ul>
+                </div> 
+                <!-- Card 10 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/croacia.png" alt="Croácia">
+                    <div class="card-header">
+                        <h3>Croácia</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã.</li>
+                    </ul>
+                </div> 
+                <!-- Card 11 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/buenos-aires.png" alt="Buenos Aires">
+                    <div class="card-header">
+                        <h3>Buenos Aires</h3>
+                        <p></p>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>5 dias/ 4 noites.</li>
+                    </ul>
+                </div> 
+                <!-- Card 12 -->
+                <div class="card1 bottom" id="card1">
+                    <img class="img" src="img/morro-sao-paulo.png" alt="Morro de São Paulo">
+                    <div class="card-header">
+                        <h3>Morro de </br> São Paulo - BA</h3>
+                    </div>
+                    <ul class="ul">
+                        <p><strong>Serviços inclusos:</strong></p>
+                        <li>Passagem aérea ida e volta;</li>
+                        <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                        <li>Café da manhã;</li>
+                        <li>3 dias/ 2 noites.</li>
+                    </ul>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Seção 6: Parceiros -->
+        <section class="parceiros">
+            <div id="wrapper">
+                <!-- Título e Barra de Pesquisa -->
+                <div class="header">
+                    <h1>Descubra as lojas parceiras e transforme suas compras em recompensas!</h1>
+                </div>
+            
+                <!-- Lojas Parceiras -->
+                <div id="lojas-parceiras">
+                    <div class="parceiros-container">
+                        <img class="parceiro" src="cards/onehouse.png" alt="One House" data-name="one house" />
+                        <img class="parceiro" src="cards/grupomaxi.png" alt="Grupo Maxxi" data-name="grupo maxxi" />
+                    </div>
+                </div>
+            
+                <!-- Subtítulo -->
+                <div class="title">
+                    <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
+                </div>
+            
+                <!-- Carrossel -->
+                <div id="carrossel">
+                    <!-- Controles do Carrossel -->
+                    <div id="div-cards">
+                        <div class="seta-container">
+                            <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" aria-label="Seta Esquerda">
+                                <i class="fa fa-less-than"></i>
+                            </button>
+                        </div>
+                        <div id="cards-container">
+                            <img class="card" src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" />
+                            <img class="card" src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" />
+                            <img class="card" src="cards/derosso.png" alt="Derosso" data-name="derosso" />
+                            <img class="card" src="cards/docol.png" alt="Docol" data-name="docol" />
+                            <img class="card" src="cards/eliane.png" alt="Eliane" data-name="eliane" />
+                            <img class="card" src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" />
+                            <img class="card" src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" />
+                            <img class="card" src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" />
+                            <img class="card" src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" />
+                            <img class="card" src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" />
+                            <img class="card" src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" />
+                            <img class="card" src="cards/deca.png" alt="Deca" data-name="deca" />
+                            <img class="card" src="cards/gauss.png" alt="Gauss" data-name="gauss" />
+                            <img class="card" src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" />
+                            <img class="card" src="cards/incepa.png" alt="Incepa" data-name="incepa" />
+                            <img class="card" src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" />
+                            <img class="card" src="cards/corstone.png" alt="Corstone" data-name="corstone" />
+                            <img class="card" src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" />
+                            <img class="card" src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" />
+                            <img class="card" src="cards/portinari.png" alt="Portinari" data-name="portinari" />
+                            <img class="card" src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" />
+                            <img class="card" src="cards/roca.png" alt="Roca" data-name="roca" />
+                            <img class="card" src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" />
+                            <img class="card" src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" />
+                            <img class="card" src="cards/stobag.png" alt="Stobag" data-name="stobag" />
+                            <img class="card" src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" />
+                            <img class="card" src="cards/zen.png" alt="Zen" data-name="zen" />
+                        </div>
+                        <div class="seta-container">
+                            <button class="seta" id="seta-direita" onclick="RolarParaDireita()" aria-label="Seta Direita">
+                                <i class="fa fa-greater-than"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Paginação Oculta -->
+                <div class="d-none" id="paginator"></div>
+            </div>
+            
+            <script src="index.js" defer></script>
+            <script type="text/javascript">
+                setInterval(() => {
+                    RolarParaDireita();
+                }, 2000);
+            </script>
+            
+        </section>
+
+        <!-- Seção 7: Entre em contato -->
+        <section id="formulario">
+            <!-- Título e Texto -->
+            <div id="container-titulo">
+                <h2 id="titulo-contatos">Entre em contato</h2>
+                <p id="texto-contatos">Nós estamos aqui para você! Como podemos ajudar?</p>
+            </div>
+        
+            <!-- Formulário -->
+            <form class="container-form">
+                <!-- Inputs do formulário -->
+                <div class="container-form-input">
+                    <input type="text" placeholder="Seu nome" name="Name" required><br>
+                    <input type="email" placeholder="Digite seu e-mail" name="Email" required><br>
+                    <textarea placeholder="Deixe sua mensagem..." id="box-text" name="Message" required></textarea><br>
+                    <button id="button" type="submit">Enviar</button>
+                </div>
+        
+                <!-- Imagem e Ícones de Redes Sociais -->
+                <div class="container-imagem-doLado-contato">
+                    <img src="img/imagem.svg" alt="Ilustração de contato" />
+                    <div class="icon">
+                        <a href="https://www.facebook.com/" aria-label="Facebook">
+                            <img id="face" src="img/face.svg" alt="Ícone do Facebook" class="icone">
+                        </a>
+                        <a href="https://www.instagram.com/" aria-label="Instagram">
+                            <img id="insta" src="img/inst.svg" alt="Ícone do Instagram" class="icone">
+                        </a>
+                        <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                            <img id="link" src="img/link.svg" alt="Ícone do LinkedIn" class="icone">
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </section>            
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <!-- Sobre a Plataforma -->
+            <div id="partner">
+                <div id="container-logo">
+                    <img id="logo-image" src="img/logo.svg" alt="Logo">
+                </div>
+                <div class="header-footer">
+                    <p>
+                        É uma plataforma de parceria dedicada. Nossa missão é criar conexões duradouras entre profissionais e lojas do setor de construção, decoração e arquitetura, oferecendo benefícios reais para todos os envolvidos.
+                    </p>
+                    <div id="redes">
+                        <a href="https://www.facebook.com/"><img src="img/face.svg" alt="Facebook" class="icone"></a>
+                        <a href="https://www.instagram.com/"><img src="img/inst.svg" alt="Instagram" class="icone"></a>
+                        <a href="https://www.linkedin.com/"><img src="img/link.svg" alt="LinkedIn" class="icone"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links do Rodapé -->
+            <div id="container-links-footer">
+                <div id="link-footer">
+                    <label>Conheça a PlugouwTech</label>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Como Funciona?</a></li>
+                        <li><a href="#">Termos e Condições</a></li>
+                        <!-- Adicione outros links conforme necessário -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

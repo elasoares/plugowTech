@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartnerShip</title>
+
+    <link rel="stylesheet" href="styles-raiz.css">
+
+    <!-- Segundo Branche: Denis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Terceiro Branche: Ariel -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Quarto Branche: Elaine Tavares -->
+    <script src="script.js" defer></script>
+
+    <!-- Quinto Branche: Karla -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="responsivestyle.css"> 
+</head>
+<body>
+    <!-- Primeiro Branche: Gabriel Brandolt -->
+    <header>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('.nav-menu');
+                const buttons = document.querySelector('.buttons');
+                navMenu.classList.toggle('show');
+                buttons.classList.toggle('hidden');
+            }
+        </script>        
+        <div class="logo">
+            <img src="img/icon-pather.svg" alt="Logo Partner" class="logo-img">
+        </div>
+
+        <nav>
+            <ul class="nav-menu ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Lojas Parceiras</a></li>
+                <li><a href="#">Prêmios</a></li>
+                <li><a href="#">Contato</a></li>
+                <li class="login-item"><a href="#">Login</a></li>
+                <li class="cadastro-item"><a href="#">Cadastro</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="cadastro">Cadastre-se</a>
+        </div>
+    </header>    
+    <div class="container">
+        <div class="text-and-image">
+            <div class="text-content">
+                <h1>Ganhe especificando
+                <br>nossas lojas parceiras
+                <br>e viva experiências
+                <br>incríveis.</h1>
+                <p>Acumule pontos a cada compra e indique profissionais para<br>
+                    transformar suas interações em experiências incríveis.</p>
+            </div>
+            <div class="image-content">
+                <img src="img/img-viagem.svg" alt="Imagem de viagem" class="viagem-img">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <a href="#" class="btn-saiba-mais ">Saiba Mais</a>
+        <div class="info-box">
+                <h3>Parcerias de Sucesso</h3>
+                <p>Nosso programa foca em oferecer benefícios reais<br> e experiências incríveis.</p>
+        </div>
+    </div>
+
+    <!-- Segundo Branche: Denis -->
+    <!-- Seção Principal (Partnership) -->
+    <section class="partnership-section">
+        <div class="content">
+            <h1>O que é o Partnership?</h1>
+            <p>
+                Um programa de pontuação que preza pela <br>
+                parceria, onde o principal objetivo é cuidar do <br>
+                relacionamento comercial, pois acreditamos ser <br>
+                fundamental para impulsionar o crescimento e o <br>
+                sucesso em um mercado cada vez mais <br>
+                competitivo e dinâmico.
+            </p>
+            <a href="#" class="cta-button">Quero fazer parte ➔</a>
+        </div>
+        <div class="image">
+            <img src="img/imagem-partnership.svg" alt="Ilustração sobre parceria e crescimento">
+        </div>
+    </section>
+
+    <!-- Seção Imagem Principal -->
+    <section class="main-image-section">
+        <div class="container">
+            <img src="img/imagem-principal.svg" alt="Imagem de Fundo" class="imagem-fundo">
+            <img src="img/imagem-aperto.svg" alt="Imagem Sobreposta" class="imagem-sobreposta">
+        </div>
+    </section>
+
+    <!--ilustração parceira-->
+    <main id="imagem">
+        <div class="container-imagem">
+            <div class="container-titulo-image">
+                <h2 id="titulo-imagem">O que é o Partnership?</h2>
+                <p id="texto-imagem">
+                    Um programa de pontuação que preza pela <br>
+                    parceria, onde o principal objetivo é cuidar do <br>
+                    relacionamento comercial, pois acreditamos ser <br>
+                    fundamental para impulsionaro crescimento e o <br>
+                    sucesso em um mercado cada vez mais <br> 
+                    competitivo e dinâmico. 
+                </p>
+                
+                <div class="container-button"> 
+                    <button class="cta-button">Quero fazer parte</button>
+                    <button class="lojas-parceiras-button">Ver nossas lojas parceiras <img class="seta-pra-direita" src="img/Arrow right.svg" alt="seta pra direita"></button>
+                </div>
+            </div>
+        </div>
+        <div class="container-image-svg">
+            <img class="imagem-banner" src="img/image.png" alt="Descrição da imagem" />
+        </div>     
+    </main>    
+    <script src="index.js"></script>
+
+    <!-- Terceiro Branche: Ariel -->
+    <div id="container">
+        <div class="header">
+            <div class="logo">
+                <img src="img/engrenagem.svg" alt="Logo">
+            </div>
+            <h1><strong>Como</strong> Funciona?</h1>
+        </div>
+    
+        <div class="steps">
+            <img src="img/caminho.svg" class="background-caminho" alt="">
+            <!-- Passo 1 -->
+            <div class="step-row">
+                <div class="text">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h2>Compre</h2>
+                    </div>
+                    <p>A cada compra realizada em nossas lojas parceiras, você ganha pontos.</p>
+                </div>
+                <div class="image">
+                    <img src="img/compre.svg" alt="Compre">
+                </div>
+            </div>
+    
+            <!-- Passo 2 -->
+            <div class="step-row reverse">
+                <div class="text">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h2>Acumule</h2>
+                    </div>
+                    <p>Com nosso sistema de pontuação, você acumula pontos a cada compra em nossas lojas parceiras. Quanto
+                        mais você participar, mais pontos você ganha. Aproveite essa oportunidade!</p>
+                </div>
+                <div class="image">
+                    <img src="img/acumule.svg" alt="Acumule">
+                </div>
+            </div>
+    
+            <!-- Passo 3 -->
+            <div class="step-row">
+                <div class="text">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h2>Troque</h2>
+                    </div>
+                    <p>Converta seus pontos em experiências incríveis.</p>
+                </div>
+                <div class="image">
+                    <img src="img/troque.svg" alt="Troque">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quarto Branche: Elaine Tavares -->
+    <section class="experiencias">
+        <div class="experiencias-container-texto headline">
+            <h2 class="h2">Transforme pontos em experiência</h2>
+            <p class="p">Conheça agora algumas das experiências que nossos parceiros poderão viver no PartnerShip</p>
+        </div>  
+        <div class="experiencias-container">   
+         
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/orlando-disney.png" alt="Orlando">
+                <div class="card-header">
+                    <h3 class="h3">Orlando</h3>
+                    <p class="p">Disney</p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>5 dias/ 4 noites;</li>
+                    <li>Ingresso Park.</li>
+                </ul>
+            </div>   
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/paris.png" alt="Paris">
+                <div class="card-header">
+                    <h3 class="h3">Paris</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>5 dias/ 4 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/milao.png" alt="Milão">
+                <div class="card-header">
+                    <h3 class="h3">Milão</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/japao.png" alt="Japão">
+                <div class="card-header">
+                    <h3 class="h3">Japão</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>5 dias/ 4 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 headline" id="card1">
+                <img class="img" style="border-radius: 12px 12px 0 0 " src="img/foz-do-iguacu.png" alt="Foz do Iguaçu">
+                <div class="card-header">
+                    <h3 class="h3">Foz do Iguaçu - PR.</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>3 dias/ 2 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 headline" id="card1">
+                <img class="img" src="img/paraty.png" alt="Paraty">
+                <div class="card-header">
+                    <h3 class="h3">Paraty</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>3 dias/ 2 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 headline" id="card1">
+                <img class="img" src="img/ilha-bela.png" alt="Ilhabela">
+                <div class="card-header">
+                    <h3 class="h3">Ilhabela</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>3 dias/ 2 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 headline" id="card1">
+                <img class="img" src="img/cruzeiro-costa-brasileira.png" alt="Cruzeiro costa brasileira">
+                <div class="card-header">
+                    <h3 class="h3">Cruzeiro costa </br> brasileira</h3>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Pensão completa;</li>
+                    <li>Embarque em Santos;</li>
+                    <li>4 dias.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/milao-salone.png" alt="Milão">
+                <div class="card-header">
+                    <h3 class="h3">Milão</h3>
+                    <p class="p">Salone Del Mobile</p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>Ingresso Salone del Mobile.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/croacia.png" alt="Croácia">
+                <div class="card-header">
+                    <h3 class="h3">Croácia</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/buenos-aires.png" alt="Buenos Aires">
+                <div class="card-header">
+                    <h3 class="h3">Buenos Aires</h3>
+                    <p class="p"></p>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>5 dias/ 4 noites.</li>
+                </ul>
+            </div> 
+            <div class="card1 bottom" id="card1">
+                <img class="img" src="img/morro-sao-paulo.png" alt="Morro de São Paulo">
+                <div class="card-header">
+                    <h3 class="h3">Morro de </br> São Paulo - BA</h3>
+                </div>
+                <ul class="ul">
+                    <p><strong>Serviços inclusos:</strong></p>
+                    <li>Passagem aérea ida e volta;</li>
+                    <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
+                    <li>Café da manhã;</li>
+                    <li>3 dias/ 2 noites.</li>
+                </ul>
+            </div> 
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
+    <!-- Quinto Branche: Karla -->
+    <div id="container">
+        <div id="wrapper">
+            <!--Título e Barra de Pesquisa-->
+            <div class="header">
+                <h1>Descubra as lojas parceiras e transforme suas compras em recompensas!</h1>
+                <!--  <div id="line"></div> -->
+            </div>
+            <!-- Barra de Pesquisa -->
+         <!-- <div class="search-bar">
+             <input type="text" id="search-input" placeholder="Pesquisar Fornecedores"
+             onkeyup="filterPartners(event, this)" onkeydown="filterPartners(event, this)">
+         </div> -->
+
+            <div id="lojas-parceiras">
+                <div>
+                    <img class="parceiro" src="cards/onehouse.png" alt="" data-name="one house" />
+                    <img class="parceiro" src="cards/grupomaxi.png" alt="" data-name="grupo maxxi" />
+                </div>
+            </div>
+
+            <div class="title">
+                <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
+            </div>
+
+            <!--CARROSSEL-->
+            <div id="carrossel">
+                <!--Divisão dos Cards-->
+                <div id="div-cards">
+                    <div class="seta-container">
+                        <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" alt="seta esquerda">
+                            <i class="fa fa-less-than"></i>
+                        </button>
+                    </div>
+                    <div id="cards-container">
+                        <img class="card" src="cards/lexxa.png" alt="" data-name="lexxa" />
+                        <img class="card" src="cards/mosarte.png" alt="" data-name="mosarte" />
+                        <img class="card" src="cards/derosso.png" alt="" data-name="derosso" />
+                        <img class="card" src="cards/docol.png" alt="" data-name="docol" />
+                        <img class="card" src="cards/eliane.png" alt="" data-name="eliane" />
+                        <img class="card" src="cards/fiandre.png" alt="" data-name="fiandre" />
+                        <img class="card" src="cards/pormadeportas.png" alt="" data-name="pormadeportas" />
+                        <img class="card" src="cards/sda_automacao.png" alt="" data-name="automacao sda" />
+                        <img class="card" src="cards/ritallio.png" alt="" data-name="ritallio" />
+                        <img class="card" src="cards/decortiles.png" alt="" data-name="decortiles" />
+                        <img class="card" src="cards/ceusa.png" alt="" data-name="ceusa" />
+                        <img class="card" src="cards/deca.png" alt="" data-name="deca" />
+                        <img class="card" src="cards/gauss.png" alt="" data-name="gauss" />
+                        <img class="card" src="cards/hardinfinity.png" alt="" data-name="hardinfinity" />
+                        <img class="card" src="cards/incepa.png" alt="" data-name="incepa" />
+                        <img class="card" src="cards/kerakoll.png" alt="" data-name="kerakoll" />
+                        <img class="card" src="cards/corstone.png" alt="" data-name="corstone" />
+                        <img class="card" src="cards/manufatti.png" alt="" data-name="manufatti" />
+                        <img class="card" src="cards/ninamartinelli.png" alt="" data-name="ninamartinelli" />
+                        <img class="card" src="cards/portinari.png" alt="" data-name="portinari" />
+                        <img class="card" src="cards/prettyjet.png" alt="" data-name="prettyjet" />
+                        <img class="card" src="cards/roca.png" alt="" data-name="roca" />
+                        <img class="card" src="cards/santaluzia.png" alt="" data-name="santaluzia" />
+                        <img class="card" src="cards/sutdiovetro.png" alt="" data-name="studio vetro" />
+                        <img class="card" src="cards/stobag.png" alt="" data-name="stobag" />
+                        <img class="card" src="cards/tetovinilico.png" alt="" data-name="tetovinilico" />
+                        <img class="card" src="cards/zen.png" alt="" data-name="zen" />
+                    </div>
+                    <div class="seta-container">
+                        <button class="seta" id="seta-direita" onclick="RolarParaDireita()" alt="seta direita">
+                            <i class="fa fa-greater-than"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none" id="paginator"></div>
+        </div>
+    </div>
+    <script src="index.js" defer></script>
+    <script type="text/javascript">
+        window.setInterval(
+            () =>{
+                RolarParaDireita();
+            },
+            2000
+        );
+    </script>
+
+    <!-- Sexto Branche: Gabriel Sant'ana -->
+    <main>
+        <div id="formulario">
+    
+            <div id="container-titulo">
+                <h2 id="titulo-contatos">Entre em contato </h2>
+                <p id="texto-contatos">Nós estamaos aqui para você! Como podemos ajudar?</p>
+            </div>
+    
+            <form class="container-form">
+                <div class="container-form-input">
+                    <input type="text" placeholder="Seu nome" name="Name" required> <br>
+                    <input type="email" placeholder="Digite seu e-mail" name="Email" required><br>
+                    <input type="text" placeholder="Deixei sua mensagem..." id="box-text" name="Name" required><br>
+                    <button id="button">Enviar</button>
+                </div>
+                <div class="container-imagem-doLado-contato">
+                    <img src="img/imagem.svg" />
+                    <div class="icon">
+                        <a href="https://www.facebook.com/"><img id="face" src="img/face.svg" alt="ERROR" class="icone"></a>
+                        <a href="https://www.instagram.com/"><img id="insta" src="img/inst.svg" alt="ERROR"
+                                class="icone"></a>
+                        <a href="https://www.linkedin.com/"><img id="link" src="img/link.svg" alt="ERROR" class="icone"></a>
+                    </div>
+                </div>
+            </form>
+    
+        </div>
+    
+    
+        <!--Roda-pé-->
+        <div id="fundo-roda-pe">
+    
+            <div class="container-footer">
+    
+                <div id="partner">
+                    <div id="container-logo">
+                        <img id="logo-image" src="img/logo.svg" alt="ERROR">
+                    </div>
+                    <div class="header-footer">
+                        <p>É uma plataforma de parceria dedicada. Nossa <br>
+                            missão é criar conexões duradouras entre <br>
+                            profissionais e lojas do setor de construção, <br>
+                            decoração e arquitetura, oferecendo benefícios <br>
+                            reais para todos os envolvidos.
+                        </p>
+                        <div id="redes">
+                            <a href="https://www.facebook.com/"><img id="face" src="img/face.svg" alt="ERROR"
+                                    class="icone"></a>
+                            <a href="https://www.instagram.com/"><img id="insta" src="img/inst.svg" alt="ERROR"
+                                    class="icone"></a>
+                            <a href="https://www.linkedin.com/"><img id="link" src="img/link.svg" alt="ERROR"
+                                    class="icone"></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="container-links-footer">
+                    <div id="link-footer">
+                        <label>Conheça a plugouwTech</label>
+                        <a href="">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="">
+                            <li>Como Funciona?</li>
+                        </a>
+                        <a href="">
+                            <li>Termos e Condições</li>
+                        </a>
+                        <a href="">
+                            <li>Política de Privacidade</li>
+                        </a>
+                        <a href="">
+                            <li>Como trocar os pontoa</li>
+                        </a>
+                        <a href="">
+                            <li>Cadastra-se</li>
+                        </a>
+                    </div>
+                    <div id="link-footer">
+                        <label>Ajuda</label>
+                        <a href="">
+                            <li>FAQ</li>
+                        </a>
+                        <a href="">
+                            <li>Contato</li>
+                        </a>
+                        <a href="">
+                            <li>Termos e Condições</li>
+                        </a>
+                    </div>
+                    <div id="link-footer">
+                        <label>Links</label>
+                        <a href="">
+                            <li>lojas parceiras</li>
+                        </a>
+                        <a href="">
+                            <li>Recompensas</li>
+                        </a>
+                        <a href="">
+                            <li>Contato</li>
+                        </a>
+                        <a href="">
+                            <li>Login</li>
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </main>
+</body>
+</html>
