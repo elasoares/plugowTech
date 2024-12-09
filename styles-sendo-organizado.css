@@ -9,6 +9,14 @@ body {
     overflow-x: hidden;
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 
 /*=============== Menu ===============*/
 
@@ -564,7 +572,9 @@ nav ul li a:hover {
 }
 
 /* ----- Quinto Branche: Karla -----*/
-
+.parceiros {
+    background-color: #F6F6F6;
+}
 
 #wrapper {
     float:left;
@@ -572,11 +582,20 @@ nav ul li a:hover {
     height: auto;
 }
 
+.header-parceiros {
+    text-align: left;
+    align-items: center;
+    & > h1 {
+        font-size: 1.5em;
+        width: 100%;
+        color: #000;
+    }
+}
 
-h1 {
-    font-size: 1.5em;
-    width: 100%;    
-}   
+.title {
+    color: #000;
+}
+   
 
 #carrossel {
     float:left;
@@ -615,6 +634,7 @@ h1 {
 .d-none {
     display: none;
 }
+
 #div-cards{
     margin-top: 25px;
     display: grid;
@@ -626,7 +646,7 @@ h1 {
     margin:20px;
     display: grid;
     grid-auto-flow: column;
-    gap: 62px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -910,26 +930,24 @@ input:hover {
 }
 
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-}
-
-
-
 #formulario {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 55px;
-    width: 100%;
-    padding: 20px 0;
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 100vw; /* Ocupa 100% da largura da viewport */
+    height: 100vh; /* Ocupa 100% da altura da viewport */
+    background-image: url("img/fundo-formulario.svg");
+    background-size: cover; /* Faz a imagem ocupar toda a área do contêiner */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem no eixo horizontal e vertical */
+    margin: 0; /* Remove qualquer margem padrão */
+    padding: 0; /* Remove qualquer padding padrão */
+}
+
+.caixa-formulario{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 51px 48px;
 }
 
 .container-form{

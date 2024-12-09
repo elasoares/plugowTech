@@ -100,8 +100,6 @@
             </div>
         </section>
     
-
-    
         <!-- Seção 3: O que é o Partnership? -->
         <section class="partnership-section">
             <div class="content">
@@ -180,7 +178,6 @@
                 </div>
             </div>
         </section>
-
     
         <!-- Seção 5: Experiências -->
         <section class="experiencias">
@@ -374,7 +371,7 @@
         <section class="parceiros">
             <div id="wrapper">
                 <!-- Título e Barra de Pesquisa -->
-                <div class="header">
+                <div class="header-parceiros">
                     <h1>Descubra as lojas parceiras e transforme suas compras em recompensas!</h1>
                 </div>
             
@@ -452,74 +449,122 @@
 
         <!-- Seção 7: Entre em contato -->
         <section id="formulario">
-            <!-- Título e Texto -->
-            <div id="container-titulo">
-                <h2 id="titulo-contatos">Entre em contato</h2>
-                <p id="texto-contatos">Nós estamos aqui para você! Como podemos ajudar?</p>
-            </div>
-        
-            <!-- Formulário -->
-            <form class="container-form">
-                <!-- Inputs do formulário -->
-                <div class="container-form-input">
-                    <input type="text" placeholder="Seu nome" name="Name" required><br>
-                    <input type="email" placeholder="Digite seu e-mail" name="Email" required><br>
-                    <textarea placeholder="Deixe sua mensagem..." id="box-text" name="Message" required></textarea><br>
-                    <button id="button" type="submit">Enviar</button>
+            <div class="caixa-formulario">
+                <!-- Título e Texto -->
+                <div id="container-titulo">
+                    <h2  id="titulo-contatos">Entre em contato </h2>
+                    <p id="texto-contatos">Nós estamaos aqui para você! Como podemos ajudar?</p>
                 </div>
-        
-                <!-- Imagem e Ícones de Redes Sociais -->
-                <div class="container-imagem-doLado-contato">
-                    <img src="img/imagem.svg" alt="Ilustração de contato" />
-                    <div class="icon">
-                        <a href="https://www.facebook.com/" aria-label="Facebook">
-                            <img id="face" src="img/face.svg" alt="Ícone do Facebook" class="icone">
-                        </a>
-                        <a href="https://www.instagram.com/" aria-label="Instagram">
-                            <img id="insta" src="img/inst.svg" alt="Ícone do Instagram" class="icone">
-                        </a>
-                        <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-                            <img id="link" src="img/link.svg" alt="Ícone do LinkedIn" class="icone">
-                        </a>
+            
+                <!-- Formulário -->
+                <form class="container-form">
+                    <!-- Inputs do formulário -->
+                    <div class="container-form-input">
+                        <input type="text" placeholder="Seu nome" name="Name" required> <br>
+                        <input type="email" placeholder="Digite seu e-mail" name="Email" required><br>
+                        <input type="text" placeholder="Deixei sua mensagem..."  id="box-text" name="Name" required><br>
+                        <button id="button">Enviar</button>  
                     </div>
-                </div>
-            </form>
+            
+                    <!-- Imagem e Ícones de Redes Sociais -->
+                    <div class="container-imagem-doLado-contato">
+                        <img src="img/imagem.svg" alt="Ilustração de contato" />
+                        <div class="icon">
+                            <a href="https://www.facebook.com/" aria-label="Facebook">
+                                <img id="face" src="img/face.svg" alt="Ícone do Facebook" class="icone">
+                            </a>
+                            <a href="https://www.instagram.com/" aria-label="Instagram">
+                                <img id="insta" src="img/inst.svg" alt="Ícone do Instagram" class="icone">
+                            </a>
+                            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                                <img id="link" src="img/link.svg" alt="Ícone do LinkedIn" class="icone">
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>            
     </main>
 
     <footer>
-        <div class="container-footer">
-            <!-- Sobre a Plataforma -->
-            <div id="partner">
-                <div id="container-logo">
-                    <img id="logo-image" src="img/logo.svg" alt="Logo">
-                </div>
-                <div class="header-footer">
-                    <p>
-                        É uma plataforma de parceria dedicada. Nossa missão é criar conexões duradouras entre profissionais e lojas do setor de construção, decoração e arquitetura, oferecendo benefícios reais para todos os envolvidos.
-                    </p>
-                    <div id="redes">
-                        <a href="https://www.facebook.com/"><img src="img/face.svg" alt="Facebook" class="icone"></a>
-                        <a href="https://www.instagram.com/"><img src="img/inst.svg" alt="Instagram" class="icone"></a>
-                        <a href="https://www.linkedin.com/"><img src="img/link.svg" alt="LinkedIn" class="icone"></a>
+        <div id="fundo-roda-pe">        
+            <div class="container-footer">        
+                <div id="partner">
+                    <div id="container-logo">
+                        <img id="logo-image" src="img/logo.svg" alt="ERROR">
+                    </div>
+                    <div class="header-footer">
+                        <p>É uma plataforma de parceria dedicada. Nossa <br>
+                            missão é criar conexões duradouras entre <br>
+                            profissionais e lojas do setor de construção, <br>
+                            decoração e arquitetura, oferecendo benefícios <br>
+                            reais para todos os envolvidos.
+                        </p>
+                        <div id="redes">
+                            <a href="https://www.facebook.com/"><img id="face" src="img/face.svg" alt="ERROR"
+                                    class="icone"></a>
+                            <a href="https://www.instagram.com/"><img id="insta" src="img/inst.svg" alt="ERROR"
+                                    class="icone"></a>
+                            <a href="https://www.linkedin.com/"><img id="link" src="img/link.svg" alt="ERROR"
+                                    class="icone"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Links do Rodapé -->
-            <div id="container-links-footer">
-                <div id="link-footer">
-                    <label>Conheça a PlugouwTech</label>
-                    <ul>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Como Funciona?</a></li>
-                        <li><a href="#">Termos e Condições</a></li>
-                        <!-- Adicione outros links conforme necessário -->
-                    </ul>
+        
+                <div id="container-links-footer">
+                    <div id="link-footer">
+                        <label>Conheça a plugouwTech</label>
+                        <a href="">
+                            <li>Sobre</li>
+                        </a>
+                        <a href="">
+                            <li>Como Funciona?</li>
+                        </a>
+                        <a href="">
+                            <li>Termos e Condições</li>
+                        </a>
+                        <a href="">
+                            <li>Política de Privacidade</li>
+                        </a>
+                        <a href="">
+                            <li>Como trocar os pontoa</li>
+                        </a>
+                        <a href="">
+                            <li>Cadastra-se</li>
+                        </a>
+                    </div>
+                    <div id="link-footer">
+                        <label>Ajuda</label>
+                        <a href="">
+                            <li>FAQ</li>
+                        </a>
+                        <a href="">
+                            <li>Contato</li>
+                        </a>
+                        <a href="">
+                            <li>Termos e Condições</li>
+                        </a>
+                    </div>
+                    <div id="link-footer">
+                        <label>Links</label>
+                        <a href="">
+                            <li>lojas parceiras</li>
+                        </a>
+                        <a href="">
+                            <li>Recompensas</li>
+                        </a>
+                        <a href="">
+                            <li>Contato</li>
+                        </a>
+                        <a href="">
+                            <li>Login</li>
+                        </a>
+                    </div>
                 </div>
+        
             </div>
         </div>
-    </footer>
+        </footer>
     
 </body>
 </html>
