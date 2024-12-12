@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -7,6 +6,14 @@ body {
     color: #FFFFFF;
     width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
 }
 
 main{
@@ -14,8 +21,6 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 /*=============== Menu ===============*/
@@ -45,6 +50,7 @@ main{
     display: flex;
     gap: 20px;
     list-style: none;
+    align-items: center;
 }
 
 /* Menu lateral para telas menores */
@@ -104,13 +110,6 @@ main{
 }
 
 /*=============== Cabeçalho ===============*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 150px;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -139,7 +138,7 @@ nav ul li a {
     text-decoration: none;
     color: #C4C4C4;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     padding: 12px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -156,19 +155,13 @@ nav ul li a:hover {
     display: none;
 }
 
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
 /* Botões de Login e Cadastro */
 .buttons {
     display: flex;
     gap: 15px;
 }
 
-.cadastro,
-.login {
+.cadastro, .login {
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -186,7 +179,7 @@ nav ul li a:hover {
 }
 
 
-/*=============== Seção: Introdução e Imagem ===============*/
+/*=============== Seção 1: Introdução e Imagem ===============*/
 #intro-section {
     justify-content: center;
     display: block;
@@ -267,49 +260,65 @@ nav ul li a:hover {
         font-size: 16px;
         font-weight: normal;
         line-height: 1.5;
-        /* Dá espaçamento entre linhas do texto */
         padding-top: 48px;
         padding-left: 10%;
     }
 }
 
-/*=============== Seção: O que é o Partnership? ===============*/
-.partnership-section {
+/*=============== Seção 2: O que é o Partnership? ===============*/
+#partnership-section {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 2rem;
-    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 10rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
     width: 100%;
 }
 
-
-.partnership-section .content {
+#partnership-section .content {
     max-width: 50%;
 }
 
-.partnership-section h1 {
+#partnership-section .content h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 1rem;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 26px;
 }
 
-.partnership-section p {
+#partnership-section .content p {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 98px;
 }
 
 .cta-button {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: #0A72AD;
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button-parceiros {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: #0A72AD;
+    text-decoration: none;
+    border: solid 1px #0A72AD;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -318,31 +327,21 @@ nav ul li a:hover {
     background-color: #0056b3;
 }
 
-.partnership-section .image {
+.cta-button-parceiros:hover{
+    background-color: #0056b3;
+    color: #FFFFFF;
+}
+
+#partnership-section .image {
     max-width: 40%;
 }
 
-.partnership-section .image img {
+#partnership-section .image img {
     width: 100%;
     height: auto;
 }
 
-/* Imagem Central com Sobreposição */
-.container- {
-    position: relative;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
-.imagem-sobreposta {
-    position: absolute;
-    top: 105%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-}
-
-/*=============== Seção: Como Funciona? ===============*/
+/*=============== Seção 3: Como Funciona? ===============*/
 #como-funciona {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -350,38 +349,34 @@ nav ul li a:hover {
     box-sizing: border-box;
     background-color: #F6F6F6;
     width: 100%;
+    padding-bottom: 80px;
 }
 
-/* ----- Header----- */
+/* Header */
 .como-funciona-header {
     display: flex;
-    align-items: flex-end; /* Alinha conteúdo ao final verticalmente */
-    justify-content: space-between; /* Distribui logo e espaço entre elementos */
+    align-items: flex-end;
+    justify-content: space-between;
     margin-top: 69px;
-    position: relative; /* Necessário para centralizar o título com posição absoluta */
-    height: 100px; /* Altura definida para o cabeçalho */
+    position: relative;
+    height: 100px;
 }
 
-.como-funciona-header {
-    & > h1 {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-        font-family: "Lato", sans-serif;
-        color: #000;
-        margin: 0;
-    }
+.como-funciona-header h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.logo {
-    & > img {
-        width: 130px;
-        height: auto;
-    }
+.logo img {
+    width: 130px;
+    height: auto;
 }
 
-/* ----- Steps ----- */
+/* Steps */
 .background-caminho {
     scale: 0.85;
     position: absolute;
@@ -425,10 +420,10 @@ nav ul li a:hover {
 }
 
 .step-row:nth-child(4) .image img {
-    transform: scale(1.5); /* Aumenta a escala da ultima imagem (troque.svg) */
+    transform: scale(1.5);
 }
 
-/* ----- Círculo com número e título alinhado ----- */
+/* Círculo com número e título alinhado */
 .step-header {
     display: flex;
     align-items: center;
@@ -461,10 +456,10 @@ nav ul li a:hover {
     color: #555;
 }
 
-/*=============== A PARTIR DESTE PONTO, FIZ PEQUENOS AJUSTES PARA A APRESENTAÇÃO DO DIA 09/12 ===============*/
-.experiencias{
+/*=============== Seção 4: Experiências ===============*/
+#experiencias{
     font-family: "Poppins", sans-serif;
-    background: #F6F6F6;
+    background: #FFFFFF;
     padding-inline: 15px;
     padding-bottom: 80px;
 }
@@ -472,8 +467,9 @@ nav ul li a:hover {
 .experiencias-container-texto {
     font-size: 24px;
     color: #777777;
-    /* border: 2px solid black; */
     max-width: 1000px;
+    padding-block: 80px;
+    padding-left: 40px;
 
     & > h2 {
         font-size: 40px;
@@ -489,14 +485,8 @@ nav ul li a:hover {
     gap: 15px;
 }
 
-.experiencias-container-texto{
-    padding-block: 80px;
-    padding-left: 40px;
-}
-
 .card1{
     width: 315px;
-    /* border: 2px solid black; */
     background-color: #FFFFFF;
     border-radius: 12px 12px 0 0 ;
     padding-bottom: 10px;
@@ -522,7 +512,6 @@ nav ul li a:hover {
 
     & > p {
         font-size: 16px;
-        /* border: 2px solid black; */
         height: 25px;
         margin-bottom: 8px;
         color: #0B132A;
@@ -544,36 +533,11 @@ nav ul li a:hover {
     color: #505050;
 }
 
-@media (max-width: 1334px){
-    .experiencias-container{
-        justify-content: space-around;
-        gap: 15px;
-    }
-}
-
-
-@media (max-width: 1004px){
-    .experiencias-container-texto{
-        text-align: center;
-        padding-left:0;
-        /* border: 2px solid red; */
-    }
-}
-
-@media (max-width: 424px){
-    .experiencias .h2{
-        font-size: 30px;
-    }
-
-    .experiencias-container-texto .p{
-        font-size: 18px;
-        margin-bottom: -50px;
-    }
-}
-
-/* ----- Quinto Branche: Karla -----*/
-.parceiros {
+/*=============== Seção 5: Parceiros ===============*/
+#parceiros {
     background-color: #F6F6F6;
+    padding-block: 80px;
+    padding-left: 40px;
 }
 
 #wrapper {
@@ -584,10 +548,12 @@ nav ul li a:hover {
 
 .header-parceiros {
     text-align: left;
-    align-items: center;
-    & > h1 {
-        font-size: 1.5em;
-        width: 100%;
+    align-items: left;
+
+    & > h2 {
+        font-size: 40px;
+        margin-bottom: 12px;
+        max-width: 1000px;
         color: #000;
     }
 }
@@ -595,7 +561,6 @@ nav ul li a:hover {
 .title {
     color: #000;
 }
-   
 
 #carrossel {
     float:left;
@@ -702,117 +667,11 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
-/* Para celulares */
-@media (max-width: 480px){
-    div#container {
-        float:left;
-        margin:0;
-        padding: 2%;
-        width: 95%;
-    }
-
-    div#wrapper {
-        float:left;
-        width: 90%;
-        padding: 10%;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .search-bar {
-        float:left;
-        margin-top:5%;
-        margin-left:-5%;
-    }
-
-    .search-bar input {
-        height: 40px;
-        width: 75%;
-    }
-
-    #cards-container {
-        margin: 0px;
-        margin-left:-1%;
-    }
-
-    .card {
-        height: 190px;
-    }
-
-    .seta {
-        display:none;
-    }
-    .seta#seta-esquerda {
-        display: none;
-    }
-    /* .seta #seta-direita {
-        float:right;
-        margin-right:75%;
-    } */
-    .d-none {
-        display: block;
-    }
-
-    .buttons-set {
-        float:left;
-        height: 40px;
-        margin-top: 5%;
-        width: 68%;
-        padding-left: 25%;
-    }
-
-    .button-seta {
-        float:left;
-        border-radius:50px;
-        border: solid 1px #c4c4c4;
-        width: 40px;
-        height: 40px;
-        margin: 5%;
-    }
-
-    .button-seta i {
-        font-size: 10px;
-    }
-
-}
-/* Para tablets */
-@media (min-width: 768px) {
-    /* Estilos para telas maiores que 768px */
-    .search-bar input {
-        margin-left:12%;
-    }
-    .seta {
-        margin-left: 20%;
-    }
-}
-
-/* Para desktops */
-@media (min-width: 1024px) {
-    /* Estilos para telas maiores que 1024px */
-}
-
-/* Para telas grandes */
-@media (min-width: 1440px) {
-    /* Estilos para telas maiores que 1440px */
-}
-
-
-/* ----- Sexto Branche: Gabriel Sant'ana -----*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-}
-
-
+/*=============== Seção 6: Entre em contato ===============*/
 a {
     color: white;
     text-decoration: none;
 }
-
 
 #container-titulo{
     display: flex;
@@ -844,7 +703,6 @@ a {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 #link:hover {
     background-color: #0a66c24f; 
@@ -900,12 +758,11 @@ input:hover {
     border-color: #0775B4;
 }
 
-
 #box-text{
     width: 430px;
-    height: 150px;
-    
+    height: 150px;    
 }
+
 #button {
     width: 430px;
     height: 50px;
@@ -929,19 +786,18 @@ input:hover {
     box-shadow: 0px 8px 12px rgba(57, 159, 216, 0.4);
 }
 
-
 #formulario {
     display: flex;
-    align-items: center; /* Centraliza os itens verticalmente */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    width: 100vw; /* Ocupa 100% da largura da viewport */
-    height: 100vh; /* Ocupa 100% da altura da viewport */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
     background-image: url("img/fundo-formulario.svg");
-    background-size: cover; /* Faz a imagem ocupar toda a área do contêiner */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: center; /* Centraliza a imagem no eixo horizontal e vertical */
-    margin: 0; /* Remove qualquer margem padrão */
-    padding: 0; /* Remove qualquer padding padrão */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }
 
 .caixa-formulario{
@@ -958,6 +814,7 @@ input:hover {
     gap: 100px;
     width: 100%;
 }
+
 .container-form-input{
     display: flex;
     justify-content: center;
@@ -966,7 +823,6 @@ input:hover {
     gap: 2px;
     width: 100%;
 }
-
 
 .container-imagem-doLado-contato{
     display: flex;
@@ -984,12 +840,12 @@ input:hover {
     width: 100%;
 }
 
+/*=============== Rodapé ===============*/
 #fundo-roda-pe {
     background-color: #222222;
     padding-bottom: 50px;
     width: 100%;
     flex-wrap: wrap;
-    /* position: fixed; */
     bottom: 0;
 }
 
@@ -1000,7 +856,6 @@ input:hover {
     flex-direction: column;
     gap:50px;
     width: 100%;
-
 }
 
 #partner{
@@ -1061,6 +916,10 @@ input:hover {
     width: 100%;
 }
 
+
+/*=============== Responsividade ===============*/
+
+/* O código abaixo influencia na Seção 6, por isso não foi excluído desse arquivo. */
 @media (min-width: 1500px) {
     #fundo-roda-pe{
         display: flex;
