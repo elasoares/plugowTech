@@ -23,93 +23,9 @@ main{
     flex-direction: column;
 }
 
-/*=============== Menu ===============*/
+/*=============== Header ===============*/
 
-/* Ícone do menu hambúrguer */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    width: 25px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.hamburger .line {
-    width: 100%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    transition: all 0.3s ease;
-}
-
-/* Menu escondido por padrão */
-.nav-menu {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    align-items: center;
-}
-
-/* Menu lateral para telas menores */
-.nav-menu.hidden {
-    display: none;
-}
-
-.nav-menu.show {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #222;
-    width: 70%;
-    height: 100%;
-    padding: 20px;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-/* Links do menu */
-.nav-menu.show li {
-    margin-bottom: 15px;
-}
-
-.nav-menu.show li a {
-    font-size: 20px;
-    color: #C4C4C4;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-
-.nav-menu.show li a:hover {
-    color: #FFFFFF;
-    background-color: #3f3e3e;
-    transform: scale(1.1);
-}
-
-/* Botões de Login e Cadastro */
-.buttons {
-    display: flex;
-    gap: 15px;
-}
-
-.buttons.hidden {
-    display: none;
-}
-
-.nav-menu.show~.buttons {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-}
-
-/*=============== Cabeçalho ===============*/
+/* Configurando a logo */
 .logo {
     display: flex;
     align-items: center;
@@ -122,6 +38,7 @@ main{
     height: 70px;
 }
 
+/* Navegação principal */
 nav ul {
     list-style: none;
     margin: 0;
@@ -139,6 +56,7 @@ nav ul li a {
     color: #C4C4C4;
     font-weight: bold;
     font-size: 20px;
+    display: block; /* Garante que o link ocupe toda a área */
     padding: 12px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -150,9 +68,31 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.nav-menu .login-item,
-.nav-menu .cadastro-item {
-    display: none;
+/* Ajustes para itens de Login e Cadastro */
+nav ul li.login, 
+nav ul li.cadastro {
+    list-style: none;
+}
+
+nav ul li.login a {
+    background: linear-gradient(to bottom, #60BBEE, #0A72AD);
+    color: white;
+    text-align: center;
+}
+
+nav ul li.cadastro a {
+    border: 1px solid #60BBEE;
+    color: #60BBEE;
+    text-align: center;
+    background: none;
+}
+
+/* Hover consistente para Login e Cadastro */
+nav ul li.login a:hover,
+nav ul li.cadastro a:hover {
+    color: #FFFFFF;
+    background-color: #3f3e3e;
+    transform: scale(1.1);
 }
 
 /* Botões de Login e Cadastro */
@@ -161,25 +101,11 @@ nav ul li a:hover {
     gap: 15px;
 }
 
-.cadastro, .login {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
+.buttons.hidden {
+    display: none;
 }
 
-.cadastro {
-    background: none;
-    border: 1px solid #60BBEE;
-    color: #60BBEE;
-}
-
-.login {
-    background: linear-gradient(to bottom, #60BBEE, #0A72AD);
-    color: white;
-}
-
-
-/*=============== Seção 1: Introdução e Imagem ===============*/
+/*=============== Seção 1: Introdução ===============*/
 #intro-section {
     justify-content: center;
     display: block;
