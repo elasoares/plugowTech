@@ -1,11 +1,5 @@
 /* ----- Quinto Branche: Karla -----*/
-*{
-    margin: 0px;
-    font-family: 'Poppins';
-}
-body {
-    background-color: #f6f6f6;
-}
+
 
 #container {
     display: flex;
