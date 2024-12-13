@@ -1,5 +1,5 @@
 
-// ----- Quarto Branche: Elaine Tavares -----
+// ----- Quarto Branch: Elaine Tavares -----
 // ScrollReveal().reveal('.headline')
 
 const left = ScrollReveal({

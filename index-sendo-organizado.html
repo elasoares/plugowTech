@@ -29,6 +29,9 @@
     <!-- Adicionando animações -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- Swiper - Carrossel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>    
     <main>
@@ -162,7 +165,7 @@
             </div>
             <div class="experiencias-container">
                 <!-- Card 1 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/orlando-disney.png" alt="Orlando">
                     <div class="card-header">
                         <h3>Orlando</h3>
@@ -178,7 +181,7 @@
                     </ul>
                 </div>
                 <!-- Card 2 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/paris.png" alt="Paris">
                     <div class="card-header">
                         <h3>Paris</h3>
@@ -193,7 +196,7 @@
                     </ul>
                 </div>
                 <!-- Card 3 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/milao.png" alt="Milão">
                     <div class="card-header">
                         <h3>Milão</h3>
@@ -207,14 +210,13 @@
                     </ul>
                 </div>
                 <!-- Card 4 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/japao.png" alt="Japão">
                     <div class="card-header">
                         <h3>Japão</h3>
                         <p></p>
                     </div>
                     <ul class="ul">
-                        <p><strong>Serviços inclusos:</strong></p>
                         <p><strong>Serviços inclusos:</strong></p>
                         <li>Passagem aérea ida e volta;</li>
                         <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
@@ -223,7 +225,7 @@
                     </ul>
                 </div>
                 <!-- Card 5 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" style="border-radius: 12px 12px 0 0 " src="img/foz-do-iguacu.png" alt="Foz do Iguaçu">
                     <div class="card-header">
                         <h3>Foz do Iguaçu - PR.</h3>
@@ -238,7 +240,7 @@
                     </ul>
                 </div> 
                 <!-- Card 6 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/paraty.png" alt="Paraty">
                     <div class="card-header">
                         <h3>Paraty</h3>
@@ -253,7 +255,7 @@
                     </ul>
                 </div> 
                 <!-- Card 7 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/ilha-bela.png" alt="Ilhabela">
                     <div class="card-header">
                         <h3>Ilhabela</h3>
@@ -268,10 +270,10 @@
                     </ul>
                 </div> 
                 <!-- Card 8 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/cruzeiro-costa-brasileira.png" alt="Cruzeiro costa brasileira">
                     <div class="card-header">
-                        <h3>Cruzeiro costa </br> brasileira</h3>
+                        <h3 style="margin-bottom: -30px;">Cruzeiro costa </br> brasileira</h3>
                         <p></p>
                     </div>
                     <ul class="ul">
@@ -282,7 +284,7 @@
                     </ul>
                 </div> 
                 <!-- Card 9 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/milao-salone.png" alt="Milão">
                     <div class="card-header">
                         <h3>Milão</h3>
@@ -297,7 +299,7 @@
                     </ul>
                 </div> 
                 <!-- Card 10 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/croacia.png" alt="Croácia">
                     <div class="card-header">
                         <h3>Croácia</h3>
@@ -311,7 +313,7 @@
                     </ul>
                 </div> 
                 <!-- Card 11 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/buenos-aires.png" alt="Buenos Aires">
                     <div class="card-header">
                         <h3>Buenos Aires</h3>
@@ -326,7 +328,7 @@
                     </ul>
                 </div> 
                 <!-- Card 12 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/morro-sao-paulo.png" alt="Morro de São Paulo">
                     <div class="card-header">
                         <h3>Morro de </br> São Paulo - BA</h3>
@@ -344,82 +346,54 @@
 
         <!-- Seção 5: Parceiros -->
         <section id="parceiros">
-            <div id="wrapper">
-                <!-- Título e Barra de Pesquisa -->
-                <div class="header-parceiros">
-                    <h2>Descubra as lojas parceiras e transforme suas compras em experiências!</h2>
-                </div>
-            
-                <!-- Lojas Parceiras -->
-                <div id="lojas-parceiras">
-                    <div class="parceiros-container">
-                        <img class="parceiro" src="cards/onehouse.png" alt="One House" data-name="one house" />
-                        <img class="parceiro" src="cards/grupomaxi.png" alt="Grupo Maxxi" data-name="grupo maxxi" />
-                    </div>
-                </div>
-            
-                <!-- Subtítulo -->
-                <div class="title">
-                    <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
-                </div>
-            
-                <!-- Carrossel -->
-                <div id="carrossel">
-                    <!-- Controles do Carrossel -->
-                    <div id="div-cards">
-                        <div class="seta-container">
-                            <button class="seta" id="seta-esquerda" onclick="RolarParaEsquerda()" aria-label="Seta Esquerda">
-                                <i class="fa fa-less-than"></i>
-                            </button>
-                        </div>
-                        <div id="cards-container">
-                            <img class="card" src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" />
-                            <img class="card" src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" />
-                            <img class="card" src="cards/derosso.png" alt="Derosso" data-name="derosso" />
-                            <img class="card" src="cards/docol.png" alt="Docol" data-name="docol" />
-                            <img class="card" src="cards/eliane.png" alt="Eliane" data-name="eliane" />
-                            <img class="card" src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" />
-                            <img class="card" src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" />
-                            <img class="card" src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" />
-                            <img class="card" src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" />
-                            <img class="card" src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" />
-                            <img class="card" src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" />
-                            <img class="card" src="cards/deca.png" alt="Deca" data-name="deca" />
-                            <img class="card" src="cards/gauss.png" alt="Gauss" data-name="gauss" />
-                            <img class="card" src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" />
-                            <img class="card" src="cards/incepa.png" alt="Incepa" data-name="incepa" />
-                            <img class="card" src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" />
-                            <img class="card" src="cards/corstone.png" alt="Corstone" data-name="corstone" />
-                            <img class="card" src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" />
-                            <img class="card" src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" />
-                            <img class="card" src="cards/portinari.png" alt="Portinari" data-name="portinari" />
-                            <img class="card" src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" />
-                            <img class="card" src="cards/roca.png" alt="Roca" data-name="roca" />
-                            <img class="card" src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" />
-                            <img class="card" src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" />
-                            <img class="card" src="cards/stobag.png" alt="Stobag" data-name="stobag" />
-                            <img class="card" src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" />
-                            <img class="card" src="cards/zen.png" alt="Zen" data-name="zen" />
-                        </div>
-                        <div class="seta-container">
-                            <button class="seta" id="seta-direita" onclick="RolarParaDireita()" aria-label="Seta Direita">
-                                <i class="fa fa-greater-than"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Paginação Oculta -->
-                <div class="d-none" id="paginator"></div>
+             <!-- Título e Barra de Pesquisa -->
+             <div class="header-parceiros">
+                <h2>Descubra as lojas parceiras e transforme suas compras em experiências!</h2>
+                <hr>
             </div>
-            
-            <script src="index.js" defer></script>
-            <script type="text/javascript">
-                setInterval(() => {
-                    RolarParaDireita();
-                }, 2000);
-            </script>
-            
+            <!-- Lojas Parceiras -->
+            <div id="lojas-parceiras">
+                    <img class="parceiro" src="cards/onehouse.png" alt="One House" data-name="one house" />
+                    <img class="parceiro" src="cards/grupomaxi.png" alt="Grupo Maxxi" data-name="grupo maxxi" />      
+            </div>
+             <!-- Subtítulo -->
+             <div class="title">
+                <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" /></div>
+                <div class="swiper-slide"><img src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" /></div>
+                <div class="swiper-slide"> <img src="cards/derosso.png" alt="Derosso" data-name="derosso" /></div>
+                <div class="swiper-slide"> <img src="cards/docol.png" alt="Docol" data-name="docol" /></div>
+                <div class="swiper-slide"> <img src="cards/eliane.png" alt="Eliane" data-name="eliane" /></div>
+                <div class="swiper-slide"> <img src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" /></div>
+                <div class="swiper-slide"> <img src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" /></div>
+                <div class="swiper-slide"><img src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" /></div>
+                <div class="swiper-slide"> <img src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" /></div>
+                <div class="swiper-slide"> <img src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" /></div>
+                <div class="swiper-slide"> <img src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" /></div>
+                <div class="swiper-slide"> <img  src="cards/deca.png" alt="Deca" data-name="deca" /></div>
+                <div class="swiper-slide"> <img src="cards/gauss.png" alt="Gauss" data-name="gauss" /></div>
+                <div class="swiper-slide"> <img src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" /></div>
+                <div class="swiper-slide"> <img src="cards/incepa.png" alt="Incepa" data-name="incepa" /></div>
+                <div class="swiper-slide"> <img src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" /></div>
+                <div class="swiper-slide"> <img src="cards/corstone.png" alt="Corstone" data-name="corstone" /></div>
+                <div class="swiper-slide"> <img src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" /></div>
+                <div class="swiper-slide"> <img src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" /></div>
+                <div class="swiper-slide"> <img src="cards/portinari.png" alt="Portinari" data-name="portinari" /></div>
+                <div class="swiper-slide"> <img src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" /></div>
+                <div class="swiper-slide"> <img src="cards/roca.png" alt="Roca" data-name="roca" /></div>
+                <div class="swiper-slide"> <img src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" /></div>
+                <div class="swiper-slide"> <img src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" /></div>
+                <div class="swiper-slide"> <img src="cards/stobag.png" alt="Stobag" data-name="stobag" /></div>
+                <div class="swiper-slide"> <img src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" /></div>
+                <div class="swiper-slide"> <img src="cards/zen.png" alt="Zen" data-name="zen" /></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>                 
         </section>
 
         <!-- Seção 6: Entre em contato -->
@@ -540,6 +514,31 @@
             </div>
         </div>
     </footer>
-    
+ 
+  
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 5,
+     spaceBetween: 30,
+     loop: true,
+     autoplay: {
+       delay: 3000, // Intervalo de 3 segundos entre as transições automáticas
+       disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
+     },
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+      navigation: {
+       nextEl: ".swiper-button-next", // Seleciona o botão "Next"
+       prevEl: ".swiper-button-prev", // Seleciona o botão "Previous"
+     },
+   });
+ </script>
+  
 </body>
 </html>

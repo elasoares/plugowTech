@@ -205,7 +205,7 @@ nav ul li.cadastro a:hover {
 }
 
 #partnership-section .content h2 {
-    font-size: 2rem;
+    font-size: 40px; 
     color: #333;
     margin: 0;
     text-align: left;
@@ -280,6 +280,13 @@ nav ul li.cadastro a:hover {
     .buttons {
         margin-top: 50px;
     }
+}
+
+@media(max-width: 1245px){
+    
+    #partnership-section .content p {
+        text-align: center;
+    }
   
 }
 
@@ -343,6 +350,13 @@ nav ul li.cadastro a:hover {
         justify-content: center;
     }
 }
+
+@media(max-width: 510px) {
+    #partnership-section .content h2 {
+        font-size: 30px; 
+    }
+}
+
 
 @media(max-width: 434px) {
     #partnership-section .content h2 {
@@ -520,17 +534,16 @@ nav ul li.cadastro a:hover {
 }
 
 .experiencias-container-texto {
-    font-size: 24px;
     color: #777777;
     max-width: 1000px;
-    padding-block: 80px;
+    padding-block: 50px;
     padding-left: 40px;
+}
 
-    & > h2 {
+.experiencias-container-texto h2{
         font-size: 40px;
         margin-bottom: 12px;
-        color: #000;
-    }
+        color: #000;   
 }
 
 .experiencias-container{
@@ -546,10 +559,11 @@ nav ul li.cadastro a:hover {
     border-radius: 12px 12px 0 0 ;
     padding-bottom: 10px;
     margin-bottom: 20px;
+    transition: .3s;
+    box-shadow: 10px 10px 30px gray;
 }
 
 .card1:hover{
-    box-shadow: 10px 10px 30px gray;
     transform: translateY(-10px) !important;
 }
 
@@ -588,33 +602,101 @@ nav ul li.cadastro a:hover {
     color: #505050;
 }
 
+@media(max-width: 1004px){
+    .experiencias-container{
+        gap: 50px;
+    }
+}
+
+@media(max-width: 824px){
+    .experiencias-container-texto{
+        padding-left: 0px;
+    }
+
+    .experiencias-container-texto p{
+        text-align: center;
+    }
+    .experiencias-container-texto h2{
+       
+        text-align: center;
+    }
+}
+
 /*=============== Seção 5: Parceiros ===============*/
 #parceiros {
     background-color: #F6F6F6;
+    width: 100%;
     padding-block: 80px;
-    padding-left: 40px;
+    padding-inline: 40px;
+    /* border: 2px solid blue; */
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; */
 }
+
+
+.header-parceiros h2{
+        font-size: 40px;
+        max-width: 1000px;
+        color: #000;
+        margin-left: 40px;
+        margin-bottom: -10px;
+}
+
+hr{
+    width: 50%;
+     margin-bottom: 80px;
+     margin-left: 40px;
+     border: 3px solid #399FD8;
+}
+
+ .title {
+    color: #000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+#lojas-parceiras {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+ }
+
+ .parceiro{
+     width: 500px;
+     border-radius:8px;
+ }
+
+ .swiper {
+      width: 95%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 #wrapper {
     float:left;
     width: 100%;
     height: auto;
-}
-
-.header-parceiros {
-    text-align: left;
-    align-items: left;
-
-    & > h2 {
-        font-size: 40px;
-        margin-bottom: 12px;
-        max-width: 1000px;
-        color: #000;
-    }
-}
-
-.title {
-    color: #000;
+    /* border: 2px solid red; */
 }
 
 #carrossel {
@@ -622,35 +704,8 @@ nav ul li.cadastro a:hover {
     width: 100%;
 }
 
-#line {
-    margin-top:1%;
-    height: 5px;
-    width: 50%;
-    background-color: #298cc5;
-}
-.search-bar {
-    float:left;
-    margin: 2% 0%;
-    width: 100%;
-}
 
-.search-bar input {
-    padding: 1%;
-    float:left;
-    width: 43%;
-    margin-left:9%;
-    border: 1px solid #298cc5;
-    height: 15px;
-    border-radius: 50px;
-    text-indent: 15px;
-}
-.search-bar input:active {
-    border-color:#298cc5;
-}
 
-.search-bar input:focus-visible {
-    border: solid 1px #298cc5;
-}
 .d-none {
     display: none;
 }
@@ -672,6 +727,7 @@ nav ul li.cadastro a:hover {
 
 .card {
     display:flex;
+    width: 100%;
     height: 186px;
     border-radius: 10px;
 }
@@ -721,6 +777,39 @@ nav ul li.cadastro a:hover {
     transform: translateY(-7px);
     transition: 0.5s;
 }
+
+
+
+@media(max-width:1053px){
+    .header-parceiros h2{
+        text-align: center;
+        margin-left: 00px;
+        margin-bottom: 80px;
+}
+
+hr{
+    display: none;
+}
+
+.swiper {
+    width: 98%;
+  }
+}
+
+@media(max-width:949px){
+    #parceiros{
+        margin-bottom: 200px;
+    }
+}
+
+@media(max-width:985px){
+    .parceiro{
+        width: 400px;
+        border-radius:8px;
+    }
+}
+
+
 
 /*=============== Seção 6: Entre em contato ===============*/
 a {

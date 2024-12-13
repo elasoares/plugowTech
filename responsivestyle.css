@@ -1,43 +1,4 @@
-/* ----- Quinto Branche: Karla -----*/
-
-
-#container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    max-width: 1444px;
-    margin:0px auto;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#wrapper {
-    flex:1 100%;
-    margin: 0px auto;
-    padding:0%;
-}
-
-.header {
-    flex:1;
-    margin-top:3%;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1.65em;
-}
-
-.title h2 {
-    text-align: center;
-}
-
-#lojas-parceiras {
-    display: flex;
-    width:auto;
-    margin-left: 25%;
-    margin-top:3%;
-    margin-bottom: 5%;
-}
+/* ----- Quinto Branche: Karla -----  */
 
 #lojas-parceiras div {
     display: grid;
@@ -46,10 +7,6 @@ h1 {
     width:auto;
 }
 
-.parceiro {
-    min-width: 120%;
-    border-radius:8px;
-}
 
 .search-bar {
     flex:1;
@@ -94,7 +51,6 @@ h1 {
 .card:hover, .parceiro:hover {
     transform: translateY(-7px);
     transition: 0.5s;
-    cursor: pointer;
 }
 
 .seta-container {
@@ -112,15 +68,15 @@ h1 {
     border: solid 1px #c4c4c4;
     flex-shrink: 2;
 }
-/* #seta-esquerda {
-    float:left;
-    margin-left: -50%;
-}
+                /* #seta-esquerda {
+                    float:left;
+                    margin-left: -50%;
+                }
 
-#seta-direita {
-    float:right;
-    margin-right: -50%;
-} */
+                #seta-direita {
+                    float:right;
+                    margin-right: -50%;
+                } */
 
 .seta-container .seta i {
     font-size: 0.8em;
@@ -190,14 +146,7 @@ h1 {
         width:auto;
     }    
 
-    .search-bar {
-        margin-top:8%;
-        margin-left:-14%;
-        margin-bottom:8%;
-    }
-    .search-bar input {
-        width: 70%;
-    }
+    
     .d-none {
         display:none !important;
     }
