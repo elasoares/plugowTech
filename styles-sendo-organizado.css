@@ -2,19 +2,10 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(to right bottom, #302f2f, #222222);
     color: #FFFFFF;
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 10rem;
-    height: 120px;
 }
 
 main{
@@ -24,14 +15,13 @@ main{
     flex-direction: column;
 }
 
-/*=============== Header ===============*/
-/* Configurando a logo */
-.logo {
+/*=============== Seção 1: Introdução ===============*/
+/* Configurando o menu */
+.menu {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-    margin-left: 15px;
+    padding: 0 10rem 0 0;
 }
 
 .logo-img {
@@ -53,10 +43,10 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #C4C4C4;
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 20px;
-    display: block; /* Garante que o link ocupe toda a área */
+    display: block;
     padding: 12px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -87,11 +77,11 @@ nav ul li.cadastro a {
     background: none;
 }
 
-/* Hover consistente para Login e Cadastro */
+/* Hover para Login e Cadastro */
 nav ul li.login a:hover,
 nav ul li.cadastro a:hover {
     color: #FFFFFF;
-    background-color: #3f3e3e;
+    background: linear-gradient(to bottom, #60BBEE, #0A72AD);
     transform: scale(1.1);
 }
 
@@ -105,20 +95,27 @@ nav ul li.cadastro a:hover {
     display: none;
 }
 
-/*=============== Seção 1: Introdução ===============*/
+/* Conteúdo principal */
 #intro-section {
     display: block;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    padding: 2rem 10rem; /* Mesma configuração de padding */
-    margin-top: 0; 
+    padding-top: 54px;
+    padding-left: 10rem;
+    background-image: url('img/img-background-paisagem-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;
+
+    /* Escurecendo a imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de transparência */
+    background-blend-mode: darken; /* Combina a cor com a imagem */
 }
 
 .text-and-image {
-    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 .text-content {
@@ -219,7 +216,7 @@ nav ul li.cadastro a:hover {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
-    text-align: justify;
+    /* text-align: justify; Deixa o texto justificado */ 
     max-width: 800px; /* Acrescentei espaço entre o texto e a imagem */
 }
 
@@ -380,7 +377,7 @@ nav ul li.cadastro a:hover {
     transform: translateX(-50%);
 }
 
-.logo img {
+.menu img {
     width: 130px;
     height: auto;
 }
@@ -738,7 +735,6 @@ a {
     font-size: 14px;
     color: #222222;
 }
-
 
 #link, #insta, #face {
     width: 45px;
