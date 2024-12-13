@@ -361,26 +361,24 @@ nav ul li.cadastro a:hover {
 /* Header */
 .como-funciona-header {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-top: 69px;
-    position: relative;
-    height: 100px;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 10px; /* Espaço entre a imagem e o texto */
+    margin-top: 50px;
 }
 
 .como-funciona-header h2 {
     font-family: "Lato", sans-serif;
     font-size: 40px;
     color: #000;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0; /* Remove margens extras */
 }
 
-.menu img {
-    width: 130px;
+.logo-engrenagem img {
+    width: 180px;
     height: auto;
 }
+
 
 /* Steps */
 .background-caminho {
@@ -467,6 +465,18 @@ nav ul li.cadastro a:hover {
       flex-direction: column;
       text-align: center;
     }
+
+    .como-funciona-header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 50px;
+
+        & > h2 {
+            margin-top: -50px;
+        }
+    }
   
     .step-row.reverse {
       flex-direction: column;
@@ -476,14 +486,14 @@ nav ul li.cadastro a:hover {
       justify-content: center;
     }
   
-    .header {
+    .como-funciona {
       height: auto;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
   
-    .header h1 {
+    .como-funciona h2 {
       position: static;
       transform: none;
       margin-top: 0.5rem;
