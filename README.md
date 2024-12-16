@@ -9,56 +9,44 @@
 
 **Links do projeto:**
 - Figma: https://www.figma.com/design/aVS1a4ZKe3MNysV0vikc7G/PlugowTech?node-id=102-638&node-type=canvas&t=RxaXQ94d9AXL5BZu-0
-- Canva: https://www.canva.com/design/DAGVbRCEQOY/fjmZj6aYsPCUbyF1yaHkGg/edit?utm_content=DAGVbRCEQOY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton                                                                            
-- Notion: https://www.notion.so/95651e770d4d44e7847dccf00f21159f?v=1365c7e1798380839f13000c02b0f8ea&pvs=4     
-- GitHub: https://github.com/elasoares/plugowTech
 
 ##
-### Backend (Django): Organizando os aplicativos por funcionalidade
+### Funcionalidades Principais
+- Acúmulo de Pontos: Realize compras com os parceiros participantes e ganhe pontos.
+- Troca de Experiências: Converta seus pontos acumulados em experiências como viagens e serviços exclusivos.
+- Catálogo de Parceiros: Acesse uma lista completa de empresas parceiras que oferecem benefícios.
+- Interface Interativa: Design intuitivo, com animações e carrossel para uma experiência dinâmica.
 
-Com base nos requisitos do cliente, os aplicativos (apps) criados no projeto Django foram os seguintes:
+##
+### Tecnologias Utilizadas
+- HTML5: Estrutura principal do site.
+- CSS3: Estilização, layout e responsividade.
+- JavaScript: Adiciona interatividade e dinamismo.
+- Swiper.js: Implementação do carrossel interativo.
+- ScrollReveal.js: Animações ao rolar a página.
+- Font Awesome: Ícones personalizáveis para uma interface moderna.
 
-**a) Core:**
+##
+### Como Rodar o Projeto
+#### 1. Pré-requisitos
+- Qualquer navegador moderno (Google Chrome, Firefox, Edge, etc).
+- Um editor de código como VS Code (opcional).
+ 
+#### 2. Clone o repositório
+- No terminal, execute:
+- git clone https://github.com/seu-usuario/partnership.git
+- Ir na banch "consolidado"
 
-Responsável pelas funcionalidades centrais e compartilhadas, como:
-- Página inicial pública (home.html).
-- Gerenciamento de templates gerais e estáticos.
-- Configurações globais, como termos de uso, privacidade, ou suporte.
+#### 3. Abra o projeto na branch CONSOLIDADO
+- Basta abrir o arquivo index.html no navegador.
 
-**b) Usuarios:**
+##
+### Estrutura de Pastas
+![image](https://github.com/user-attachments/assets/0aa5468a-0d61-4d2d-8971-88f85e12dcdf)
 
-Gerencia os usuários do sistema, suas informações e perfis. Inclui:
-- Cadastro e autenticação (Profissionais, Consultores, Clientes).
-- Gestão de dados específicos, como CPF, profissão, registro profissional, e data de aniversário.
-- Dashboard personalizado.
-
-**c) Lojas:**
-
-Focado no cadastro e gerenciamento das lojas parceiras. Inclui:
-- Cadastro de lojas.
-- Visualização e manutenção das informações das lojas (endereço, contato, etc.).
-- Listagem para consulta.
-
-**d) Pontos:**
-
-Gerencia o acúmulo, histórico e validade de pontos. Inclui:
-- Registro de transações de pontos.
-- Validade dos pontos (18 meses padrão, configurável).
-- Relatórios e visualização do saldo.
-
-**e) Recompensas:**
-
-Focado no catálogo e resgate de recompensas. Inclui:
-- Cadastro e gestão de experiências (viagens, workshops, cashbacks, etc.).
-- Resgate de pontos por recompensas.
-- Histórico de resgates realizados.
-
-**f) Notificacoes:**
-
-Gerencia as notificações e campanhas de comunicação do sistema. Inclui:
-- Envio de notificações por e-mail, SMS ou WhatsApp.
-- Configuração de campanhas promocionais (ex.: Acelera Partnership).
-- Histórico e relatórios de notificações enviadas.
-
-![image](https://github.com/user-attachments/assets/dee05ca3-a57b-4a23-8b04-65540e6afbc4)
-
+##
+### Melhorias Futuras
+- Sistema de Autenticação: Login e cadastro para clientes.
+- Painel de Usuário: Acompanhamento dos pontos acumulados e das experiências resgatadas.
+- Integração com API: Comunicação em tempo real com os parceiros comerciais.
+- Relatórios Gerenciais: Dashboard para administração de parceiros e resgates.
