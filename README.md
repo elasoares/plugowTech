@@ -50,3 +50,13 @@
 - Painel de Usuário: Acompanhamento dos pontos acumulados e das experiências resgatadas.
 - Integração com API: Comunicação em tempo real com os parceiros comerciais.
 - Relatórios Gerenciais: Dashboard para administração de parceiros e resgates.
+
+##
+### Integrantes do grupo
+- PO 1: Elaine Soares
+- PO 2: Ariel Cobos
+- Ana Karla
+- Antônio Denis
+- Elaine Tavares
+- Gabriel Brandolt
+- Gabriel Sant’Anna
