@@ -1,6 +1,19 @@
+//----- Menu Hamburguer -----
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
 
-// ----- Quarto Branch: Elaine Tavares -----
-// ScrollReveal().reveal('.headline')
+// Alternar visibilidade ao clicar no hambúrguer
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+});
+
+// Ocultar o menu ao tirar o mouse
+nav.addEventListener('mouseleave', () => {
+    nav.classList.remove('nav-active');
+});
+
+
+//----- Experiências -----
 
 const left = ScrollReveal({
     origin: "left",
@@ -28,3 +41,22 @@ const bottom = ScrollReveal({
 })
 
 bottom.reveal(".bottom")
+
+//----- Initialize Swiper -----
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next", // Seleciona o botão "Next"
+        prevEl: ".swiper-button-prev", // Seleciona o botão "Previous"
+    },
+});

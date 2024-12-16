@@ -7,8 +7,7 @@
     <title>PartnerShip</title>
 
     <!-- Links para folhas de estilo -->
-    <link rel="stylesheet" href="styles-sendo-organizado.css">
-    <link rel="stylesheet" href="responsivestyle.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Fontes do Google Fonts -->
     <!-- Pré-conexões para otimizar o carregamento de fontes -->
@@ -32,14 +31,22 @@
     <!-- Swiper - Carrossel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
-<body>    
+<body>
     <main>
         <!-- Seção 1: Introdução -->
         <section id="intro-section">
             <!-- Menu -->
             <div class="menu">
                 <img src="img/icon-pather.svg" alt="Logo Partner" class="logo-img">
+        
+                <!-- Botão Hambúrguer -->
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
 
                 <!-- Navegação principal -->
                 <nav>
@@ -49,8 +56,8 @@
                         <li><a href="#experiencias">Experiências</a></li>
                         <li><a href="#parceiros">Lojas Parceiras</a></li>                
                         <li><a href="#formulario">Contato</a></li>
-                        <li class="login"><a href="#">Login</a></li>
-                        <li class="cadastro"><a href="#">Cadastro</a></li>
+                        <!--<li class="login"><a href="#">Login</a></li>
+                        <li class="cadastro"><a href="#">Cadastro</a></li>-->
                     </ul>
                 </nav>
             </div>
@@ -61,8 +68,8 @@
                     <h1>Descubra o melhor! <br>
                         Indique nossas lojas parceiras e viva experiências incríveis.
                     </h1>
-                    <p>Acumule pontos a cada compra e indique profissionais para
-                        transformar suas interações em experiências incríveis.</p>
+                    <p>Acumule pontos a cada compra nas lojas parceiras
+                       e troque os pontos por experiências incríveis.</p>
                 </div>
             </div>
 
@@ -348,7 +355,7 @@
         <section id="parceiros">
              <!-- Título e Barra de Pesquisa -->
              <div class="header-parceiros">
-                <h2>Descubra as lojas parceiras e transforme suas compras em experiências!</h2>
+                <h2>Conheça as nossas lojas parceiras</h2>
                 <hr>
             </div>
             <!-- Lojas Parceiras -->
@@ -358,42 +365,41 @@
             </div>
              <!-- Subtítulo -->
              <div class="title">
-                <h2>Suas compras viram experiências com os melhores produtos do mercado</h2>
+                <h3>Com os nossos parceiros, você encontra os melhores produtos do mercado</h3>
             </div>
             <!-- Swiper -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" /></div>
-                <div class="swiper-slide"><img src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" /></div>
-                <div class="swiper-slide"> <img src="cards/derosso.png" alt="Derosso" data-name="derosso" /></div>
-                <div class="swiper-slide"> <img src="cards/docol.png" alt="Docol" data-name="docol" /></div>
-                <div class="swiper-slide"> <img src="cards/eliane.png" alt="Eliane" data-name="eliane" /></div>
-                <div class="swiper-slide"> <img src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" /></div>
-                <div class="swiper-slide"> <img src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" /></div>
-                <div class="swiper-slide"><img src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" /></div>
-                <div class="swiper-slide"> <img src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" /></div>
-                <div class="swiper-slide"> <img src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" /></div>
-                <div class="swiper-slide"> <img src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" /></div>
-                <div class="swiper-slide"> <img  src="cards/deca.png" alt="Deca" data-name="deca" /></div>
-                <div class="swiper-slide"> <img src="cards/gauss.png" alt="Gauss" data-name="gauss" /></div>
-                <div class="swiper-slide"> <img src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" /></div>
-                <div class="swiper-slide"> <img src="cards/incepa.png" alt="Incepa" data-name="incepa" /></div>
-                <div class="swiper-slide"> <img src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" /></div>
-                <div class="swiper-slide"> <img src="cards/corstone.png" alt="Corstone" data-name="corstone" /></div>
-                <div class="swiper-slide"> <img src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" /></div>
-                <div class="swiper-slide"> <img src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" /></div>
-                <div class="swiper-slide"> <img src="cards/portinari.png" alt="Portinari" data-name="portinari" /></div>
-                <div class="swiper-slide"> <img src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" /></div>
-                <div class="swiper-slide"> <img src="cards/roca.png" alt="Roca" data-name="roca" /></div>
-                <div class="swiper-slide"> <img src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" /></div>
-                <div class="swiper-slide"> <img src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" /></div>
-                <div class="swiper-slide"> <img src="cards/stobag.png" alt="Stobag" data-name="stobag" /></div>
-                <div class="swiper-slide"> <img src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" /></div>
-                <div class="swiper-slide"> <img src="cards/zen.png" alt="Zen" data-name="zen" /></div>
+                    <div class="swiper-slide"><img src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" /></div>
+                    <div class="swiper-slide"><img src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" /></div>
+                    <div class="swiper-slide"> <img src="cards/derosso.png" alt="Derosso" data-name="derosso" /></div>
+                    <div class="swiper-slide"> <img src="cards/docol.png" alt="Docol" data-name="docol" /></div>
+                    <div class="swiper-slide"> <img src="cards/eliane.png" alt="Eliane" data-name="eliane" /></div>
+                    <div class="swiper-slide"> <img src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" /></div>
+                    <div class="swiper-slide"> <img src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" /></div>
+                    <div class="swiper-slide"><img src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" /></div>
+                    <div class="swiper-slide"> <img src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" /></div>
+                    <div class="swiper-slide"> <img src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" /></div>
+                    <div class="swiper-slide"> <img src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" /></div>
+                    <div class="swiper-slide"> <img src="cards/deca.png" alt="Deca" data-name="deca" /></div>
+                    <div class="swiper-slide"> <img src="cards/gauss.png" alt="Gauss" data-name="gauss" /></div>
+                    <div class="swiper-slide"> <img src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" /></div>
+                    <div class="swiper-slide"> <img src="cards/incepa.png" alt="Incepa" data-name="incepa" /></div>
+                    <div class="swiper-slide"> <img src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" /></div>
+                    <div class="swiper-slide"> <img src="cards/corstone.png" alt="Corstone" data-name="corstone" /></div>
+                    <div class="swiper-slide"> <img src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" /></div>
+                    <div class="swiper-slide"> <img src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" /></div>
+                    <div class="swiper-slide"> <img src="cards/portinari.png" alt="Portinari" data-name="portinari" /></div>
+                    <div class="swiper-slide"> <img src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" /></div>
+                    <div class="swiper-slide"> <img src="cards/roca.png" alt="Roca" data-name="roca" /></div>
+                    <div class="swiper-slide"> <img src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" /></div>
+                    <div class="swiper-slide"> <img src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" /></div>
+                    <div class="swiper-slide"> <img src="cards/stobag.png" alt="Stobag" data-name="stobag" /></div>
+                    <div class="swiper-slide"> <img src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" /></div>
+                    <div class="swiper-slide"> <img src="cards/zen.png" alt="Zen" data-name="zen" /></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>                 
+
+            </div>
         </section>
 
         <!-- Seção 6: Entre em contato -->
@@ -436,17 +442,17 @@
     </main>
 
     <footer>
-        <div id="fundo-roda-pe">        
-            <div class="container-footer">        
+        <div id="fundo-roda-pe">
+            <div class="container-footer">
                 <div id="partner">
                     <div id="container-logo">
                         <img id="logo-image" src="img/logo.svg" alt="ERROR">
                     </div>
                     <div class="header-footer">
-                        <p>É uma plataforma de parceria dedicada. Nossa <br>
-                            missão é criar conexões duradouras entre <br>
-                            profissionais e lojas do setor de construção, <br>
-                            decoração e arquitetura, oferecendo benefícios <br>
+                        <p>É uma plataforma de parceria dedicada. Nossa 
+                            missão é criar conexões duradouras entre
+                            profissionais e lojas do setor de construção,
+                            decoração e arquitetura, oferecendo benefícios
                             reais para todos os envolvidos.
                         </p>
                         <div id="redes">
@@ -463,51 +469,25 @@
                 <div id="container-links-footer">
                     <div id="link-footer">
                         <label>Conheça a plugouwTech</label>
-                        <a href="">
-                            <li>Sobre</li>
-                        </a>
-                        <a href="">
-                            <li>Como Funciona?</li>
-                        </a>
-                        <a href="">
-                            <li>Termos e Condições</li>
-                        </a>
-                        <a href="">
-                            <li>Política de Privacidade</li>
-                        </a>
-                        <a href="">
-                            <li>Como trocar os pontoa</li>
-                        </a>
-                        <a href="">
-                            <li>Cadastra-se</li>
-                        </a>
+                        <a href=""><li>Sobre</li></a>
+                        <a href=""><li>Como Funciona?</li></a>
+                        <a href=""><li>Termos e Condições</li></a>
+                        <a href=""><li>Política de Privacidade</li></a>
+                        <a href=""><li>Como trocar os pontoa</li></a>
+                        <a href=""><li>Cadastra-se</li></a>
                     </div>
                     <div id="link-footer">
                         <label>Ajuda</label>
-                        <a href="">
-                            <li>FAQ</li>
-                        </a>
-                        <a href="">
-                            <li>Contato</li>
-                        </a>
-                        <a href="">
-                            <li>Termos e Condições</li>
-                        </a>
+                        <a href=""><li>FAQ</li></a>
+                        <a href=""><li>Contato</li></a>
+                        <a href=""><li>Termos e Condições</li></a>
                     </div>
                     <div id="link-footer">
                         <label>Links</label>
-                        <a href="">
-                            <li>lojas parceiras</li>
-                        </a>
-                        <a href="">
-                            <li>Recompensas</li>
-                        </a>
-                        <a href="">
-                            <li>Contato</li>
-                        </a>
-                        <a href="">
-                            <li>Login</li>
-                        </a>
+                        <a href=""><li>lojas parceiras</li></a>
+                        <a href=""><li>Recompensas</li></a>
+                        <a href=""><li>Contato</li></a>
+                        <a href=""><li>Login</li></a>
                     </div>
                 </div>
         
@@ -515,30 +495,5 @@
         </div>
     </footer>
  
-  
- <!-- Swiper JS -->
- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
- <!-- Initialize Swiper -->
- <script>
-   var swiper = new Swiper(".mySwiper", {
-     slidesPerView: 5,
-     spaceBetween: 30,
-     loop: true,
-     autoplay: {
-       delay: 3000, // Intervalo de 3 segundos entre as transições automáticas
-       disableOnInteraction: false, // Continua o autoplay mesmo após interação do usuário
-     },
-     pagination: {
-       el: ".swiper-pagination",
-       clickable: true,
-     },
-      navigation: {
-       nextEl: ".swiper-button-next", // Seleciona o botão "Next"
-       prevEl: ".swiper-button-prev", // Seleciona o botão "Previous"
-     },
-   });
- </script>
-  
 </body>
 </html>

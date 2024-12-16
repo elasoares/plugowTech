@@ -15,6 +15,11 @@ main{
     flex-direction: column;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /*=============== Seção 1: Introdução ===============*/
 /* Configurando o menu */
 .menu {
@@ -30,9 +35,6 @@ main{
 
 /* Navegação principal */
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 20px;
 }
@@ -95,6 +97,16 @@ nav ul li.cadastro a:hover {
     display: none;
 }
 
+/* Botão hambúrguer */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
 /* Conteúdo principal */
 #intro-section {
     display: block;
@@ -102,10 +114,10 @@ nav ul li.cadastro a:hover {
     align-items: center;
     padding-top: 54px;
     padding-left: 10rem;
-    background-image: url('img/img-background-paisagem-2.jpg');
+    background-image: url('img/img-background-paisagem.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     width: 100%;
 
     /* Escurecendo a imagem */
@@ -130,7 +142,7 @@ nav ul li.cadastro a:hover {
     }
 
     & > p {
-        font-size: 18px;
+        font-size: 20px;
     }    
 }
 
@@ -167,6 +179,7 @@ nav ul li.cadastro a:hover {
     height: auto;
     border-radius: 10px;
     gap: 1rem;
+    padding-right: 30px;
 
     &>h3 {
         margin-left: 25px;
@@ -176,10 +189,126 @@ nav ul li.cadastro a:hover {
     }
 
     &>p {
-        font-size: 16px;
+        font-size: 20px;
         text-align: left;
         align-content: center;
-        max-width: 500px;
+        max-width: 600px;
+    }
+}
+
+/* ----- Responsividade ----- */
+@media screen and (max-width: 1024px) {
+    #intro-section {
+        padding: 0;
+    }
+
+    .menu {
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .text-content h1 {
+        font-size: 48px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;        
+    }
+
+    .btn-saiba-mais {
+        align-self: center; 
+    }
+
+    .info-box {
+        padding: 15px;
+        gap: 1rem;
+        margin-top: -50px;
+    }
+
+    .info-box h3 {
+        font-size: 20px;
+    }
+
+    .info-box p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        padding: 20px 0;
+    }
+
+    nav.nav-active {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .text-and-image {
+        padding: 15px;
+    }
+
+    .text-content h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .info-section {
+        gap: 1rem;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .btn-saiba-mais {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .info-box {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .info-box h3 {
+        font-size: 18px;
+    }
+
+    .info-box p {
+        font-size: 14px;
     }
 }
 
@@ -213,7 +342,7 @@ nav ul li.cadastro a:hover {
 }
 
 #partnership-section .content p {
-    font-size: 1rem;
+    font-size: 20px;
     color: #555;
     line-height: 1.5;
     /* text-align: justify; Deixa o texto justificado */ 
@@ -357,7 +486,6 @@ nav ul li.cadastro a:hover {
     }
 }
 
-
 @media(max-width: 434px) {
     #partnership-section .content h2 {
         text-align: center;
@@ -382,9 +510,8 @@ nav ul li.cadastro a:hover {
 }
 
 .como-funciona-header h2 {
-    font-family: "Lato", sans-serif;
     font-size: 40px;
-    color: #000;
+    color: #333;
     margin: 0; /* Remove margens extras */
 }
 
@@ -392,7 +519,6 @@ nav ul li.cadastro a:hover {
     width: 180px;
     height: auto;
 }
-
 
 /* Steps */
 .background-caminho {
@@ -469,15 +595,22 @@ nav ul li.cadastro a:hover {
 }
 
 .step-row p {
-    font-size: 1rem;
+    font-size: 20px;
     color: #555;
 }
 
 /*----- Responsividade -----*/
+@media (max-width: 1024px) {
+    .background-caminho {
+        scale: 0.78;
+        margin: 185px 374px 345px 110px;
+    }
+}
+
 @media (max-width: 768px) {
     .step-row {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
 
     .como-funciona-header {
@@ -487,50 +620,44 @@ nav ul li.cadastro a:hover {
         text-align: center;
         margin-bottom: 50px;
 
-        & > h2 {
+        &>h2 {
             margin-top: -50px;
         }
     }
-  
+
     .step-row.reverse {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .step-header {
-      justify-content: center;
+        justify-content: center;
     }
-  
+
     .como-funciona {
-      height: auto;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-  
+
     .como-funciona h2 {
-      position: static;
-      transform: none;
-      margin-top: 0.5rem;
+        position: static;
+        transform: none;
+        margin-top: 0.5rem;
     }
-  
+
     .background-caminho {
-      display: none; /* Ocultar a linha pontilhada de caminho */
+        display: none;
+        /* Ocultar a linha pontilhada de caminho */
     }
-  }
-  
-  @media (max-width: 1024px) {
-    .background-caminho {
-      scale: 0.78;
-      margin: 185px 374px 345px 110px;
-    }  
-  }
+}
 
 /*=============== Seção 4: Experiências ===============*/
 #experiencias{
-    font-family: "Poppins", sans-serif;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     padding-inline: 15px;
     padding-bottom: 80px;
+    padding-left: 2rem;
 }
 
 .experiencias-container-texto {
@@ -538,12 +665,13 @@ nav ul li.cadastro a:hover {
     max-width: 1000px;
     padding-block: 50px;
     padding-left: 40px;
+    font-size: 28px;
 }
 
-.experiencias-container-texto h2{
+.experiencias-container-texto h2 {
         font-size: 40px;
         margin-bottom: 12px;
-        color: #000;   
+        color: #333;
 }
 
 .experiencias-container{
@@ -602,6 +730,7 @@ nav ul li.cadastro a:hover {
     color: #505050;
 }
 
+/*----- Responsividade -----*/
 @media(max-width: 1004px){
     .experiencias-container{
         gap: 50px;
@@ -616,8 +745,7 @@ nav ul li.cadastro a:hover {
     .experiencias-container-texto p{
         text-align: center;
     }
-    .experiencias-container-texto h2{
-       
+    .experiencias-container-texto h2{       
         text-align: center;
     }
 }
@@ -626,37 +754,23 @@ nav ul li.cadastro a:hover {
 #parceiros {
     background-color: #F6F6F6;
     width: 100%;
-    padding-block: 80px;
-    padding-inline: 40px;
-    /* border: 2px solid blue; */
-    /* display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; */
+    padding: 2rem 2rem 2rem 7rem;
+    text-align: left;
 }
 
-
-.header-parceiros h2{
-        font-size: 40px;
-        max-width: 1000px;
-        color: #000;
-        margin-left: 40px;
-        margin-bottom: -10px;
+.header-parceiros h2 {
+    font-size: 40px;
+    color: #333;
+    margin-left: 40px;
+    margin-bottom: -10px;
 }
 
-hr{
-    width: 50%;
-     margin-bottom: 80px;
-     margin-left: 40px;
-     border: 3px solid #399FD8;
+hr {
+    width: 38%;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    border: 3px solid #399FD8;
 }
-
- .title {
-    color: #000;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 
 #lojas-parceiras {
     display: flex;
@@ -664,165 +778,117 @@ hr{
     justify-content: center;
     gap: 50px;
     margin-bottom: 80px;
- }
+}
 
- .parceiro{
-     width: 500px;
-     border-radius:8px;
- }
-
- .swiper {
-      width: 95%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-#wrapper {
-    float:left;
+.parceiro {
     width: 100%;
-    height: auto;
-    /* border: 2px solid red; */
+    max-width: 300px;
+    border-radius: 8px;
 }
 
-#carrossel {
-    float:left;
-    width: 100%;
-}
-
-
-
-.d-none {
-    display: none;
-}
-
-#div-cards{
-    margin-top: 25px;
-    display: grid;
-    grid-auto-flow: column;
-}
-
-#cards-container {
-    float:left;
-    margin:20px;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 20px;
-    width: 100%;
-}
-
-.card {
-    display:flex;
-    width: 100%;
-    height: 186px;
-    border-radius: 10px;
-}
-
-.card:hover {
-    transform: translateY(-7px);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#seta-esquerda{
-    display: block ;
-}
-
-.seta{
-    float:left;
-    margin-top: 85%;
-    cursor: pointer;
-    border-radius: 48px;
-    width: 45px;
-    height: 45px;
-    border: solid 1px #c4c4c4
-}
-
-.seta:hover {
-    background-color: #60ddee;
-}
-
-.seta:hover i {
-    font-weight: bold;
-    color: #fff;
-}
-
-.seta #seta-esquerda {
-    margin-left:50%;
-}
-.seta #seta-direita {
-    margin-left:10%;
-}
-
-.seta i {
-    margin:45% 35%;
-    font-size: 10px
-}
-
-.seta:hover{
-    transform: translateY(-7px);
-    transition: 0.5s;
-}
-
-
-
-@media(max-width:1053px){
-    .header-parceiros h2{
-        text-align: center;
-        margin-left: 00px;
-        margin-bottom: 80px;
-}
-
-hr{
-    display: none;
+.title h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
 }
 
 .swiper {
-    width: 98%;
-  }
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-@media(max-width:949px){
-    #parceiros{
-        margin-bottom: 200px;
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100%; 
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/*----- Responsividade -----*/
+@media (max-width: 1053px) {
+    #parceiros {
+        padding: 1rem;
+    }
+
+    .header-parceiros h2 {
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 0 10px;
     }
 }
 
-@media(max-width:985px){
-    .parceiro{
-        width: 400px;
-        border-radius:8px;
+@media (max-width: 985px) {
+    .parceiro {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
+@media (max-width: 949px) {
+    #parceiros {
+        margin-bottom: 150px;
+    }
+}
 
+@media (max-width: 768px) {
+    #lojas-parceiras {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        max-width: 90%;
+    }
+
+    .header-parceiros h2 {
+        font-size: 28px;
+    }
+
+    .title h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .parceiro {
+        width: 80%;
+    }
+
+    .header-parceiros h2 {
+        font-size: 24px;
+    }
+
+    .swiper {
+        padding: 0;
+    }
+}
 
 /*=============== Seção 6: Entre em contato ===============*/
-a {
-    color: white;
-    text-decoration: none;
-}
-
 #container-titulo{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 5px;
+    width: 100%;
 }
 
 #titulo-contatos {
@@ -956,6 +1022,8 @@ input:hover {
     flex-direction: column;
     gap: 100px;
     width: 100%;
+    flex-direction: row;
+    padding: 0 20px;
 }
 
 .container-form-input{
@@ -983,33 +1051,127 @@ input:hover {
     width: 100%;
 }
 
+/*----- Responsividade -----*/
+@media (max-width: 1200px) {
+    #titulo-contatos {
+        font-size: 20px;
+    }
+
+    #texto-contatos {
+        font-size: 12px;
+    }
+
+    input, #box-text, #button {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-form {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .container-form-input {
+        width: 100%;
+    }
+
+    .container-imagem-doLado-contato {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .caixa-formulario {
+        padding: 30px 20px;
+    }
+
+    input, #box-text, #button {
+        height: 45px;
+        font-size: 12px;
+    }
+
+    #box-text {
+        height: 120px;
+    }
+
+    .icon {
+        gap: 10px;
+    }
+
+    #link, #insta, #face {
+        width: 35px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    #formulario {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #titulo-contatos {
+        font-size: 18px;
+    }
+
+    #texto-contatos {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    input, #box-text, #button {
+        height: 40px;
+    }
+
+    #box-text {
+        height: 100px;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    .icon {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 /*=============== Rodapé ===============*/
 #fundo-roda-pe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
     background-color: #222222;
     padding-bottom: 50px;
-    width: 100%;
     flex-wrap: wrap;
-    bottom: 0;
 }
 
 .container-footer{
     display: flex;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
-    flex-direction: column;
-    gap:50px;
-    width: 100%;
+    width: 90%;
 }
 
 #partner{
-    color: white;
-    font-size: 17px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    width: 100%;
-    gap: 20px;
+    color: white;
+    font-size: 16px;    
+    gap: 15px;
+    width: 50%;
 }
 
 #container-logo {
@@ -1026,6 +1188,7 @@ input:hover {
     align-items: center;
     flex-direction: column;
     gap: 25px;
+    max-width: 600px;
 }
 
 #partner p{
@@ -1037,13 +1200,14 @@ input:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
-    gap: 80px;
+    flex-direction: row;
+    gap: 100px;
+    width: 50%;
 }
 
 #link-footer {
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1059,95 +1223,66 @@ input:hover {
     width: 100%;
 }
 
-
-/*=============== Responsividade ===============*/
-
-/* O código abaixo influencia na Seção 6, por isso não foi excluído desse arquivo. */
-@media (min-width: 1500px) {
-    #fundo-roda-pe{
-        display: flex;
-        justify-content: center;
+/*----- Responsividade -----*/
+@media (max-width: 1024px) {
+    .container-footer {
+        flex-direction: column;
         align-items: center;
-        flex-direction: row;
+        text-align: center;
+    }
+
+    #partner, #container-links-footer {
         width: 100%;
+        margin-bottom: 30px;
     }
-    .container-footer{
-        flex-direction: row;
-        justify-content: center;
+
+    #container-links-footer {
+        align-content: center;
         align-items: center;
-        flex-wrap: nowrap;
-        gap: 0;
-        margin: 0;
-        padding: 0;
-        width: 90%;
-    }
-
-    
-    #partner{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
         flex-direction: column;
-        gap: 15px;
-        width: 50%;
+        gap: 40px;
     }
 
-    #partner p{
-        color: white;
-        font-size: 20px;
-    }
-
-    #container-links-footer{
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
-        gap: 100px;
-        width: 50%;
-    }
-    #link-footer {
-        color: white;
-        font-size: 17px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+    #logo-image {
+        width: 200px;
+        height: auto;
     }
 }
 
-@media (min-width: 950px) {
-    #formulario{
-        flex-direction: column;
-        width: 80%;
-    }
-    #container-titulo{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-        width: 100%;
-    }
-    .container-form{
-        flex-direction: row;
-        padding: 0 20px;
+@media (max-width: 768px) {
+    #partner p {
+        font-size: 18px;
     }
 
-    #container-links-footer{
-        flex-direction: row;
+    #redes {
+        gap: 20px;
     }
 
-    #partner{
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
+    #container-links-footer {
+        gap: 20px;
+    }
+
+    #link-footer {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #partner p {
+        font-size: 16px;
+    }
+
+    #redes {
+        gap: 10px;
+    }
+
+    #container-links-footer {
         gap: 15px;
-        padding: 20px;
     }
 
-    #partner p{
-        color: white;
-        font-size: 20px;
+    #link-footer {
+        font-size: 12px;
     }
 
 }
