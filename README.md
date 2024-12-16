@@ -25,6 +25,8 @@
 - Swiper.js: Implementação do carrossel interativo.
 - ScrollReveal.js: Animações ao rolar a página.
 - Font Awesome: Ícones personalizáveis para uma interface moderna.
+- Figma: Para designer
+- Notion: Para planejamento
 
 ##
 ### Como Rodar o Projeto
