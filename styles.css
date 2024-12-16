@@ -997,7 +997,6 @@ input:hover {
 
 #formulario {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
@@ -1012,7 +1011,8 @@ input:hover {
 .caixa-formulario{
     background-color: #FFFFFF;
     border-radius: 10px;
-    padding: 51px 48px;
+    padding: 30px 48px;
+    scale: 0.9;
 }
 
 .container-form{
@@ -1070,6 +1070,7 @@ input:hover {
     .container-form {
         flex-direction: column;
         gap: 50px;
+        padding: 10px;
     }
 
     .container-form-input {
@@ -1149,10 +1150,11 @@ input:hover {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    width: 100%;
+    width: auto;
     background-color: #222222;
-    padding-bottom: 50px;
+    padding-top: 2rem 1rem;
     flex-wrap: wrap;
+    
 }
 
 .container-footer{
@@ -1178,8 +1180,8 @@ input:hover {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 20px;
-    width: 100%;
+    padding: 2rem;
+    width: 50%;
 }
 
 .header-footer{
@@ -1189,11 +1191,12 @@ input:hover {
     flex-direction: column;
     gap: 25px;
     max-width: 600px;
+    margin-top: -30px;
 }
 
 #partner p{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #container-links-footer{
@@ -1207,12 +1210,12 @@ input:hover {
 
 #link-footer {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 
 #redes {
