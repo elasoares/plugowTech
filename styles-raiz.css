@@ -244,9 +244,12 @@ nav ul li a:hover {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     color: white;
     font-family: Arial, sans-serif;
-    width: 60%; /* Ajuste conforme necessário */
+    width: 60%; 
     height: 140px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilização do texto */
@@ -258,13 +261,12 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.info-box p {
+.info-paragrafo {
     margin: 0;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: normal;
-    line-height: 1.5; /* Dá espaçamento entre linhas do texto */
-    padding-top: 48px;
-    padding-left: 10%;
+    line-height: 1.5;
+
 }
 
 /* Responsividade */

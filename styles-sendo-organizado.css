@@ -190,6 +190,7 @@ nav ul li a:hover {
 #intro-section {
     justify-content: center;
     display: block;
+    width: 100%;
 }
 
 .text-and-image {
@@ -240,16 +241,22 @@ nav ul li a:hover {
 
 .info-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 /* Estilo do box de informações */
 .info-box {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background: linear-gradient(to right, #60BBEE, #0A72AD);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     color: white;
     height: 140px;
+    width: 50%;
 }
 
 /* Estilização do texto */
@@ -258,18 +265,18 @@ nav ul li a:hover {
     margin-left: 25px;
     font-size: 28px;
     font-weight: bold;
-    padding-top: 35px;
+   /*  padding-top: 35px; */
     text-align: center;
     }
 
     & > p {
         margin: 0;
-        font-size: 16px;
         font-weight: normal;
         line-height: 1.5;
         /* Dá espaçamento entre linhas do texto */
-        padding-top: 48px;
-        padding-left: 10%;
+       /*  padding-top: 48px;
+        padding-left: 10%; */
+        width: 50%;
     }
 }
 
@@ -385,7 +392,7 @@ nav ul li a:hover {
 .background-caminho {
     scale: 0.85;
     position: absolute;
-    margin: 165px 374px 345px 180px;
+    margin: 175px 374px 345px 180px;
 }
 
 .steps {
@@ -650,6 +657,7 @@ nav ul li a:hover {
     width: 100%;
 }
 
+
 .card {
     display:flex;
     height: 186px;
@@ -664,6 +672,7 @@ nav ul li a:hover {
 
 #seta-esquerda{
     display: block ;
+    padding-right: 10px ;
 }
 
 .seta{
@@ -688,8 +697,12 @@ nav ul li a:hover {
 .seta #seta-esquerda {
     margin-left:50%;
 }
+
 .seta #seta-direita {
     margin-left:10%;
+}
+#seta-direita {
+    padding-right: 10px ;
 }
 
 .seta i {
