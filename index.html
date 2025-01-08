@@ -7,8 +7,7 @@
     <title>PartnerShip</title>
 
     <!-- Links para folhas de estilo -->
-    <link rel="stylesheet" href="styles-sendo-organizado.css">
-    <link rel="stylesheet" href="responsivestyle.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Fontes do Google Fonts -->
     <!-- Pré-conexões para otimizar o carregamento de fontes -->
@@ -29,104 +28,90 @@
     <!-- Adicionando animações -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- Swiper - Carrossel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
-    <header>
-        <!-- Script para alternar o menu -->
-        <script>
-            function toggleMenu() {
-                const navMenu = document.querySelector('.nav-menu');
-                const buttons = document.querySelector('.buttons');
-                navMenu.classList.toggle('show');
-                buttons.classList.toggle('hidden');
-            }
-        </script>        
-    
-        <!-- Logotipo -->
-        <div class="logo">
-            <img src="img/icon-pather.svg" alt="Logo Partner" class="logo-img">
-        </div>
-    
-        <!-- Ícone de menu (hamburguer) para dispositivos móveis -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    
-        <!-- Navegação principal -->
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Lojas Parceiras</a></li>
-                <li><a href="#">Prêmios</a></li>
-                <li><a href="#">Contato</a></li>
-                <li class="login-item"><a href="#">Login</a></li>
-                <li class="cadastro-item"><a href="#">Cadastro</a></li>
-            </ul>
-        </nav>
-    
-        <!-- Botões de login e cadastro -->
-        <div class="buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="cadastro">Cadastre-se</a>
-        </div>
-    </header>
-    
     <main>
-        <!-- Seção 1: Introdução e Imagem -->
+        <!-- Seção 1: Introdução -->
         <section id="intro-section">
+            <!-- Menu -->
+            <div class="menu">
+                <img src="img/icon-pather.svg" alt="Logo Partner" class="logo-img">
+        
+                <!-- Botão Hambúrguer -->
+                <button class="hamburger" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+
+                <!-- Navegação principal -->
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#partnership-section">Sobre</a></li>
+                        <li><a href="#experiencias">Experiências</a></li>
+                        <li><a href="#parceiros">Lojas Parceiras</a></li>                
+                        <li><a href="#formulario">Contato</a></li>
+                        <!--<li class="login"><a href="#">Login</a></li>
+                        <li class="cadastro"><a href="#">Cadastro</a></li>-->
+                    </ul>
+                </nav>
+            </div>
+        
+            <!-- Conteúdo principal -->
             <div class="text-and-image">
                 <div class="text-content">
-                    <h1>Ganhe especificando
-                        <br>nossas lojas parceiras
-                        <br>e viva experiências
-                        <br>incríveis.
+                    <h1>Descubra o melhor! <br>
+                        Indique nossas lojas parceiras e viva experiências incríveis.
                     </h1>
-                    <p>Acumule pontos a cada compra e indique profissionais para<br>
-                        transformar suas interações em experiências incríveis.</p>
-                </div>
-                <div class="image-content">
-                    <img src="img/img-viagem.svg" alt="Imagem de viagem" class="viagem-img">
+                    <p>Acumule pontos a cada compra nas lojas parceiras
+                       e troque os pontos por experiências incríveis.</p>
                 </div>
             </div>
+
             <div class="info-section">
-                <a href="#" class="btn-saiba-mais">Saiba Mais</a>
+                <a href="#formulario" class="btn-saiba-mais">Saiba Mais</a>
                 <div class="info-box">
                     <h3>Parcerias de Sucesso</h3>
                     <p>Nosso programa foca em oferecer benefícios reais e experiências incríveis.</p>
                 </div>
             </div>
         </section>
-    
-        <!-- Seção 3: O que é o Partnership? -->
-        <section class="partnership-section">
+
+        <!-- Seção 2: O que é o Partnership? -->
+        <section id="partnership-section">
             <div class="content">
-                <h1>O que é o Partnership?</h1>
+                <h2>O que é o Partnership?</h2>
                 <p>
-                    Um programa de pontuação que preza pela <br>
-                    parceria, onde o principal objetivo é cuidar do <br>
-                    relacionamento comercial, pois acreditamos ser <br>
-                    fundamental para impulsionar o crescimento e o <br>
-                    sucesso em um mercado cada vez mais <br>
+                    Um programa de pontuação que preza pela 
+                    parceria, onde o principal objetivo é cuidar do 
+                    relacionamento comercial, pois acreditamos ser 
+                    fundamental para impulsionar o crescimento e o 
+                    sucesso em um mercado cada vez mais 
                     competitivo e dinâmico.
                 </p>
-                <a href="#" class="cta-button">Quero fazer parte ➔</a>
+                <div class="buttons">
+                    <a href="#" class="cta-button">Quero fazer parte</a>
+                    <a href="#parceiros" class="cta-button-parceiros">Ver nossas lojas parceiras ➔</a>
+                </div>
             </div>
             <div class="image">
-                <img src="img/imagem-partnership.svg" alt="Ilustração sobre parceria e crescimento">
+                <img class="img-partnership-setion" src="img/o-que-e-partnership.svg" alt="Ilustração sobre parceria e crescimento">
             </div>
         </section>
-        
-        <!-- Seção 4: Como Funciona? -->
+    
+        <!-- Seção 3: Como Funciona? -->
         <section id="como-funciona">
             <div id="como-funciona-container">
                 <div class="como-funciona-header">
-                    <div class="logo">
+                    <div class="logo-engrenagem">
                         <img src="img/engrenagem.svg" alt="Logo">
                     </div>
-                    <h1><strong>Como</strong> Funciona?</h1>
+                    <h2><strong>Como</strong> Funciona?</h2>
                 </div>
         
                 <div class="steps">
@@ -178,16 +163,16 @@
                 </div>
             </div>
         </section>
-    
-        <!-- Seção 5: Experiências -->
-        <section class="experiencias">
-            <div class="experiencias-container-texto headline">
+
+        <!-- Seção 4: Experiências -->
+        <section id="experiencias">
+            <div class="experiencias-container-texto">
                 <h2>Transforme pontos em experiência</h2>
                 <p>Conheça agora algumas das experiências que nossos parceiros poderão viver no PartnerShip</p>
             </div>
             <div class="experiencias-container">
                 <!-- Card 1 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/orlando-disney.png" alt="Orlando">
                     <div class="card-header">
                         <h3>Orlando</h3>
@@ -203,7 +188,7 @@
                     </ul>
                 </div>
                 <!-- Card 2 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/paris.png" alt="Paris">
                     <div class="card-header">
                         <h3>Paris</h3>
@@ -218,7 +203,7 @@
                     </ul>
                 </div>
                 <!-- Card 3 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/milao.png" alt="Milão">
                     <div class="card-header">
                         <h3>Milão</h3>
@@ -232,14 +217,13 @@
                     </ul>
                 </div>
                 <!-- Card 4 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/japao.png" alt="Japão">
                     <div class="card-header">
                         <h3>Japão</h3>
                         <p></p>
                     </div>
                     <ul class="ul">
-                        <p><strong>Serviços inclusos:</strong></p>
                         <p><strong>Serviços inclusos:</strong></p>
                         <li>Passagem aérea ida e volta;</li>
                         <li>Hospedagem em Hotel 3 estrelas ou superior;</li>
@@ -248,7 +232,7 @@
                     </ul>
                 </div>
                 <!-- Card 5 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" style="border-radius: 12px 12px 0 0 " src="img/foz-do-iguacu.png" alt="Foz do Iguaçu">
                     <div class="card-header">
                         <h3>Foz do Iguaçu - PR.</h3>
@@ -263,7 +247,7 @@
                     </ul>
                 </div> 
                 <!-- Card 6 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/paraty.png" alt="Paraty">
                     <div class="card-header">
                         <h3>Paraty</h3>
@@ -278,7 +262,7 @@
                     </ul>
                 </div> 
                 <!-- Card 7 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/ilha-bela.png" alt="Ilhabela">
                     <div class="card-header">
                         <h3>Ilhabela</h3>
@@ -293,10 +277,10 @@
                     </ul>
                 </div> 
                 <!-- Card 8 -->
-                <div class="card1 headline" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/cruzeiro-costa-brasileira.png" alt="Cruzeiro costa brasileira">
                     <div class="card-header">
-                        <h3>Cruzeiro costa </br> brasileira</h3>
+                        <h3 style="margin-bottom: -30px;">Cruzeiro costa </br> brasileira</h3>
                         <p></p>
                     </div>
                     <ul class="ul">
@@ -307,7 +291,7 @@
                     </ul>
                 </div> 
                 <!-- Card 9 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/milao-salone.png" alt="Milão">
                     <div class="card-header">
                         <h3>Milão</h3>
@@ -322,7 +306,7 @@
                     </ul>
                 </div> 
                 <!-- Card 10 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/croacia.png" alt="Croácia">
                     <div class="card-header">
                         <h3>Croácia</h3>
@@ -336,7 +320,7 @@
                     </ul>
                 </div> 
                 <!-- Card 11 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/buenos-aires.png" alt="Buenos Aires">
                     <div class="card-header">
                         <h3>Buenos Aires</h3>
@@ -351,7 +335,7 @@
                     </ul>
                 </div> 
                 <!-- Card 12 -->
-                <div class="card1 bottom" id="card1">
+                <div class="card1" id="card1">
                     <img class="img" src="img/morro-sao-paulo.png" alt="Morro de São Paulo">
                     <div class="card-header">
                         <h3>Morro de </br> São Paulo - BA</h3>
@@ -367,6 +351,7 @@
             </div>
         </section>
 
+<<<<<<< HEAD:index-sendo-organizado.html
         <!-- Seção 6: Parceiros -->
         <section class="parceiros">
             <div id="wrapper">
@@ -436,18 +421,60 @@
             
                 <!-- Paginação Oculta -->
                 <div class="d-none" id="paginator"></div>
+=======
+        <!-- Seção 5: Parceiros -->
+        <section id="parceiros">
+             <!-- Título e Barra de Pesquisa -->
+             <div class="header-parceiros">
+                <h2>Conheça as nossas lojas parceiras</h2>
+                <hr>
             </div>
-            
-            <script src="index.js" defer></script>
-            <script type="text/javascript">
-                setInterval(() => {
-                    RolarParaDireita();
-                }, 2000);
-            </script>
-            
+            <!-- Lojas Parceiras -->
+            <div id="lojas-parceiras">
+                    <img class="parceiro" src="cards/onehouse.png" alt="One House" data-name="one house" />
+                    <img class="parceiro" src="cards/grupomaxi.png" alt="Grupo Maxxi" data-name="grupo maxxi" />      
+            </div>
+             <!-- Subtítulo -->
+             <div class="title">
+                <h3>Com os nossos parceiros, você encontra os melhores produtos do mercado</h3>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="cards/lexxa.png" alt="Lexxa" data-name="lexxa" /></div>
+                    <div class="swiper-slide"><img src="cards/mosarte.png" alt="Mosarte" data-name="mosarte" /></div>
+                    <div class="swiper-slide"> <img src="cards/derosso.png" alt="Derosso" data-name="derosso" /></div>
+                    <div class="swiper-slide"> <img src="cards/docol.png" alt="Docol" data-name="docol" /></div>
+                    <div class="swiper-slide"> <img src="cards/eliane.png" alt="Eliane" data-name="eliane" /></div>
+                    <div class="swiper-slide"> <img src="cards/fiandre.png" alt="Fiandre" data-name="fiandre" /></div>
+                    <div class="swiper-slide"> <img src="cards/pormadeportas.png" alt="Pormade Portas" data-name="pormadeportas" /></div>
+                    <div class="swiper-slide"><img src="cards/sda_automacao.png" alt="Automação SDA" data-name="automacao sda" /></div>
+                    <div class="swiper-slide"> <img src="cards/ritallio.png" alt="Ritallio" data-name="ritallio" /></div>
+                    <div class="swiper-slide"> <img src="cards/decortiles.png" alt="Decortiles" data-name="decortiles" /></div>
+                    <div class="swiper-slide"> <img src="cards/ceusa.png" alt="Ceusa" data-name="ceusa" /></div>
+                    <div class="swiper-slide"> <img src="cards/deca.png" alt="Deca" data-name="deca" /></div>
+                    <div class="swiper-slide"> <img src="cards/gauss.png" alt="Gauss" data-name="gauss" /></div>
+                    <div class="swiper-slide"> <img src="cards/hardinfinity.png" alt="Hard Infinity" data-name="hardinfinity" /></div>
+                    <div class="swiper-slide"> <img src="cards/incepa.png" alt="Incepa" data-name="incepa" /></div>
+                    <div class="swiper-slide"> <img src="cards/kerakoll.png" alt="Kerakoll" data-name="kerakoll" /></div>
+                    <div class="swiper-slide"> <img src="cards/corstone.png" alt="Corstone" data-name="corstone" /></div>
+                    <div class="swiper-slide"> <img src="cards/manufatti.png" alt="Manufatti" data-name="manufatti" /></div>
+                    <div class="swiper-slide"> <img src="cards/ninamartinelli.png" alt="Nina Martinelli" data-name="ninamartinelli" /></div>
+                    <div class="swiper-slide"> <img src="cards/portinari.png" alt="Portinari" data-name="portinari" /></div>
+                    <div class="swiper-slide"> <img src="cards/prettyjet.png" alt="Pretty Jet" data-name="prettyjet" /></div>
+                    <div class="swiper-slide"> <img src="cards/roca.png" alt="Roca" data-name="roca" /></div>
+                    <div class="swiper-slide"> <img src="cards/santaluzia.png" alt="Santa Luzia" data-name="santaluzia" /></div>
+                    <div class="swiper-slide"> <img src="cards/sutdiovetro.png" alt="Studio Vetro" data-name="studio vetro" /></div>
+                    <div class="swiper-slide"> <img src="cards/stobag.png" alt="Stobag" data-name="stobag" /></div>
+                    <div class="swiper-slide"> <img src="cards/tetovinilico.png" alt="Teto Vinílico" data-name="tetovinilico" /></div>
+                    <div class="swiper-slide"> <img src="cards/zen.png" alt="Zen" data-name="zen" /></div>
+                </div>
+
+>>>>>>> b65d56d2b71a79733c123c7f1ab1b256748ec9d3:index.html
+            </div>
         </section>
 
-        <!-- Seção 7: Entre em contato -->
+        <!-- Seção 6: Entre em contato -->
         <section id="formulario">
             <div class="caixa-formulario">
                 <!-- Título e Texto -->
@@ -487,17 +514,17 @@
     </main>
 
     <footer>
-        <div id="fundo-roda-pe">        
-            <div class="container-footer">        
+        <div id="fundo-roda-pe">
+            <div class="container-footer">
                 <div id="partner">
                     <div id="container-logo">
                         <img id="logo-image" src="img/logo.svg" alt="ERROR">
                     </div>
                     <div class="header-footer">
-                        <p>É uma plataforma de parceria dedicada. Nossa <br>
-                            missão é criar conexões duradouras entre <br>
-                            profissionais e lojas do setor de construção, <br>
-                            decoração e arquitetura, oferecendo benefícios <br>
+                        <p>É uma plataforma de parceria dedicada. Nossa 
+                            missão é criar conexões duradouras entre
+                            profissionais e lojas do setor de construção,
+                            decoração e arquitetura, oferecendo benefícios
                             reais para todos os envolvidos.
                         </p>
                         <div id="redes">
@@ -514,57 +541,31 @@
                 <div id="container-links-footer">
                     <div id="link-footer">
                         <label>Conheça a plugouwTech</label>
-                        <a href="">
-                            <li>Sobre</li>
-                        </a>
-                        <a href="">
-                            <li>Como Funciona?</li>
-                        </a>
-                        <a href="">
-                            <li>Termos e Condições</li>
-                        </a>
-                        <a href="">
-                            <li>Política de Privacidade</li>
-                        </a>
-                        <a href="">
-                            <li>Como trocar os pontoa</li>
-                        </a>
-                        <a href="">
-                            <li>Cadastra-se</li>
-                        </a>
+                        <a href=""><li>Sobre</li></a>
+                        <a href=""><li>Como Funciona?</li></a>
+                        <a href=""><li>Termos e Condições</li></a>
+                        <a href=""><li>Política de Privacidade</li></a>
+                        <a href=""><li>Como trocar os pontoa</li></a>
+                        <a href=""><li>Cadastra-se</li></a>
                     </div>
                     <div id="link-footer">
                         <label>Ajuda</label>
-                        <a href="">
-                            <li>FAQ</li>
-                        </a>
-                        <a href="">
-                            <li>Contato</li>
-                        </a>
-                        <a href="">
-                            <li>Termos e Condições</li>
-                        </a>
+                        <a href=""><li>FAQ</li></a>
+                        <a href=""><li>Contato</li></a>
+                        <a href=""><li>Termos e Condições</li></a>
                     </div>
                     <div id="link-footer">
                         <label>Links</label>
-                        <a href="">
-                            <li>lojas parceiras</li>
-                        </a>
-                        <a href="">
-                            <li>Recompensas</li>
-                        </a>
-                        <a href="">
-                            <li>Contato</li>
-                        </a>
-                        <a href="">
-                            <li>Login</li>
-                        </a>
+                        <a href=""><li>lojas parceiras</li></a>
+                        <a href=""><li>Recompensas</li></a>
+                        <a href=""><li>Contato</li></a>
+                        <a href=""><li>Login</li></a>
                     </div>
                 </div>
         
             </div>
         </div>
-        </footer>
-    
+    </footer>
+ 
 </body>
 </html>
