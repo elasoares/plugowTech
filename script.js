@@ -56,7 +56,7 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next", // Seleciona o botão "Next"
-        prevEl: ".swiper-button-prev", // Seleciona o botão "Previous"
+        nextEl: ".swiper-button-next", 
+        prevEl: ".swiper-button-prev", 
     },
 });
