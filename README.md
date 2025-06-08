@@ -1,34 +1,64 @@
-# Projeto PlugowTech: Plataforma de Fidelização e Gamificação
+# Projeto de Plataforma de Fidelização e Gamificação
 
----
+**Cliente:** PlugowTech
 
-## Cliente
+**Objetivos do projeto:** 
+- Desenvolver uma plataforma de gamificação direcionada à fidelização de profissionais nas áreas de arquitetura, engenharia, design e construção, utilizando métodos de incentivo para fortalecer o engajamento e a participação desses profissionais.
+- Promover parcerias estratégicas e incentivar a recorrência de compras nas lojas parceiras, criando um ecossistema de fidelidade onde profissionais podem acumular pontos e resgatar recompensas.
+- Estabelecer a plataforma como um elo entre profissionais e fornecedores, facilitando a fidelização e retenção dos profissionais e ampliando as oportunidades de parceria e crescimento no setor.
 
-**PlugowTech**
+**Links do projeto:**
+- Figma: https://www.figma.com/design/aVS1a4ZKe3MNysV0vikc7G/PlugowTech?node-id=102-638&node-type=canvas&t=RxaXQ94d9AXL5BZu-0
 
----
+##
+### Funcionalidades Principais
+- Acúmulo de Pontos: Realize compras com os parceiros participantes e ganhe pontos.
+- Troca de Experiências: Converta seus pontos acumulados em experiências como viagens e serviços exclusivos.
+- Catálogo de Parceiros: Acesse uma lista completa de empresas parceiras que oferecem benefícios.
+- Interface Interativa: Design intuitivo, com animações e carrossel para uma experiência dinâmica.
 
-## Visão Geral e Objetivos do Projeto
+##
+### Tecnologias Utilizadas
+- HTML5: Estrutura principal do site.
+- CSS3: Estilização, layout e responsividade.
+- JavaScript: Adiciona interatividade e dinamismo.
+- Swiper.js: Implementação do carrossel interativo.
+- ScrollReveal.js: Animações ao rolar a página.
+- Font Awesome: Ícones personalizáveis para uma interface moderna.
+- Figma: Para designer
+- Notion: Para planejamento
 
-Estamos desenvolvendo uma **Plataforma de Fidelização e Gamificação** inovadora para a PlugowTech, projetada para **revolucionar o engajamento de profissionais das áreas de arquitetura, engenharia, design e construção**. Nosso principal objetivo é criar um ecossistema robusto onde a **fidelidade e a participação** desses profissionais são não apenas incentivadas, mas também recompensadas de forma estratégica.
+##
+### Como Rodar o Projeto
+#### 1. Pré-requisitos
+- Qualquer navegador moderno (Google Chrome, Firefox, Edge, etc).
+- Um editor de código como VS Code (opcional).
+ 
+#### 2. Clone o repositório
+- No terminal, execute:
+- git clone https://github.com/seu-usuario/partnership.git
+- Ir na banch "consolidado"
 
-A plataforma busca:
+#### 3. Abra o projeto na branch CONSOLIDADO
+- Basta abrir o arquivo index.html no navegador.
 
-* **Promover o engajamento e a recorrência:** Utilizar **elementos de gamificação** e incentivos para fortalecer o vínculo dos profissionais com a PlugowTech e suas **lojas parceiras**, estimulando compras repetidas e a participação ativa.
-* **Fortalecer parcerias estratégicas:** Atuar como um **elo fundamental entre profissionais e fornecedores**, criando um ambiente propício para novas parcerias e o crescimento mútuo dentro do setor.
-* **Gerar valor e recompensa:** Permitir que profissionais **acumulem pontos** e **resgatem recompensas exclusivas**, criando um ciclo virtuoso de lealdade e benefícios tangíveis.
+##
+### Estrutura de Pastas
+![image](https://github.com/user-attachments/assets/0aa5468a-0d61-4d2d-8971-88f85e12dcdf)
 
----
+##
+### Melhorias Futuras
+- Sistema de Autenticação: Login e cadastro para clientes.
+- Painel de Usuário: Acompanhamento dos pontos acumulados e das experiências resgatadas.
+- Integração com API: Comunicação em tempo real com os parceiros comerciais.
+- Relatórios Gerenciais: Dashboard para administração de parceiros e resgates.
 
-## Links Essenciais do Projeto
-
-Acompanhe o desenvolvimento e os detalhes do projeto através dos seguintes links:
-
-* **Figma (Protótipo e Design):** Visualize o design e a experiência do usuário da plataforma.
-    [https://www.figma.com/design/aVS1a4ZKe3MNysV0vikc7G/PlugowTech?node-id=102-638&node-type=canvas&t=RxaXQ94d9AXL5BZu-0](https://www.figma.com/design/aVS1a4ZKe3MNysV0vikc7G/PlugowTech?node-id=102-638&node-type=canvas&t=RxaXQ94d9AXL5BZu-0)
-
-* **Notion (Documentação e Gestão):** Acesse a documentação completa do projeto, tarefas e organização.
-    [https://www.notion.so/95651e770d4d44e7847dccf00f21159f?v=1365c7e1798380839f13000c02b0f8ea&pvs=4](https://www.notion.so/95651e770d4d44e7847dccf00f21159f?v=1365c7e1798380839f13000c02b0f8ea&pvs=4)
-
-* **GitHub (Repositório de Código):** Explore o código-fonte e o progresso do desenvolvimento.
-    [https://github.com/elasoares/plugowTech](https://github.com/elasoares/plugowTech)
+##
+### Integrantes do grupo
+- PO 1: Elaine Soares
+- PO 2: Ariel Cobos
+- Ana Karla
+- Antônio Denis
+- Elaine Tavares
+- Gabriel Brandolt
+- Gabriel Sant’Anna
